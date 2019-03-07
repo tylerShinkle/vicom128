@@ -1,0 +1,48 @@
+/* Tyler Shinkle Vicom128*/
+*{
+    margin:0;
+    padding:0;
+}
+header{
+    background-color: white;
+    color:grey;
+    height:80px;
+    padding:1em;
+}
+body{
+    background-color: grey;
+    text-decoration: none;
+    color:white;
+    font-family:monospace, sans-serif;
+    font-size: 1.25em;
+    padding:0px;
+}
+nav{
+    text-decoration: none;
+    text-align: center;
+    height: 1.5em;
+}
+section{
+    background-color: white;
+    color:grey;
+    height:70em;
+    padding: 50px;
+}
+h1{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+
+h3{
+    margin-left: 40px;
+}
+h4{
+    color: white;
+    margin-left: 40px;
+}
+p{
+    margin-left: 60px;
+}

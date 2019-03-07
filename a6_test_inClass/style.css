@@ -1,0 +1,82 @@
+body{
+    font-family: verdana, sans-serif;
+    background-color: dimgrey;
+    color:white;
+}
+
+main{
+    width:85%;
+    max-width: 100%;
+    background-color: #285295;
+    margin: 0 auto;
+}
+header{
+    background-color: #eae5d4;
+    height: 6em;
+    padding: 2em;
+    text-align: center;
+    color:darkblue;
+}
+
+nav{
+    background-color: darkblue;
+    padding: .25em;
+    text-align: center;
+    /*
+    position:relative;
+    top: 0px;
+    width:82.6%;
+    */
+    /*
+    position: fixed;
+    top:0px;
+    width: 82.6%;
+    */
+    /*
+    position:relative;
+    bottom:50px; /* same as top: -50px;*/
+    /*z-index: -1 // hides bar*/
+    position: sticky;
+    top:0px;
+    border-radius:20px;
+    
+    
+}
+
+section{
+    padding: 2em;
+}
+
+aside{
+    width:38%; /*if the width of both elements are larger than the parent they will not align*/
+    float:left;
+    border:2px dashed #fff; /*each f stands for a pair, this is shorthand*/
+    padding-left:1%;
+    max-width: 200px; /*ads are often a fixed size*/
+}
+
+article{
+    width:60%; /* 60 + 38 = 98 in addition to the 2px border*/
+    float:right;
+}
+
+article h4{
+    margin: 0;/*0 not none*/
+}
+
+footer{
+    clear:both;
+    background-color: darkblue;
+    height: 3em;
+    padding: 2em;
+}
+#smedia{
+    position:fixed;
+    top:6em;
+    left:0;
+    width:2em;
+    background-color: darkslategray;
+    border:1px solid darkblue;
+    border-radius:20px;
+    text-align: center;
+}

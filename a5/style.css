@@ -1,0 +1,158 @@
+
+body{
+    padding: 0em;
+    margin: 0em;
+    font-family: "Heebo", sans-serif;
+    background-color: #87bcf2;
+}
+main{
+    margin: 0em;
+    padding: 0em;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: .5em;
+    color:#ffffff;
+}
+header{
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: .5em;
+    color:#ffffff;
+    background-color: #87bcf2;
+    margin:0em;;
+    width:100%;
+}
+header a{
+    text-decoration: none;
+    color:white;
+}
+header h1{
+    border: 10px solid white;
+    width: 80%;
+    margin: 1em auto;
+}
+
+a{
+    text-decoration: none;
+    color: #87bcf2;
+}
+a:hover{
+    color:#fde1ae;
+    cursor:pointer;
+}
+
+/*when windows are less than 642 pixels this the links stack and become insightly*/
+nav{
+    background-color: white;
+    color:#87bcf2;
+    text-align: center;
+    padding: .5em .075em;
+    position: sticky;
+    top:0;
+    margin:0px;
+}
+nav a{
+    margin:  1em;
+    letter-spacing: .25em;
+    font-weight: bold;
+}
+section{
+    border: 10px solid white;
+    width: 80%;
+    margin: 11em auto 4em auto;
+
+}
+section h1{
+    letter-spacing: .1255em;
+    text-decoration: underline;
+    margin:1em;
+}
+#posIntro{
+    letter-spacing: 0em;
+    padding:0em 10%;
+    font-size: 1.05em;
+    word-spacing: .125em;
+    text-align:justify;
+    margin:1.5em;
+}
+
+article a{
+    color:#fad289;
+}
+
+article a:hover{
+    color:#fde1ae;
+}
+code{
+    font-size: 1.25em;
+}
+
+footer{
+    background-color: white;
+    color:#87bcf2;
+    position: fixed;
+    width: 100%;
+    bottom:0;
+    height:5%
+}
+.activePage{
+    color:#fad289;
+}
+
+#relativeExample{
+    position:relative;
+    top:10px;
+}
+#fixedExample{
+    position: fixed;
+    bottom:0;
+    z-index: -1;
+}
+/* this is a test of responsive web design 
+
+#small{
+    font-size:.46em
+}
+
+#big{
+    display: none;
+}
+*/
+
+/* testing media queries
+/*more than 642*/
+/*
+@media only screen and (min-width:642px){
+    section{
+        padding:0 20%;
+            color:blue;
+    }
+    #big{
+        display: block;
+        }
+    #small{
+        display: none;
+    }
+}
+
+/*more than 1000*/
+/*
+@media only screen and (min-width:900px){
+    section{
+        padding:0 35%;
+        font-size:1.25em;
+        color:red;
+    }
+    #big{
+        display:block;
+    }
+    
+    #small{
+        display: none;
+    }
+}
+*/
+
+
+

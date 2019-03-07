@@ -1,0 +1,128 @@
+<!--Declaration tag for HTML5-->
+<!DOCTYPE html>
+<html lang="en">
+    
+    <!--header tag-->
+    <head>
+        
+        <!--title tag-->
+        <title>Hello World!</title>
+        
+        <!--character encoding-->
+        <meta charset="UTF-8">
+        
+        <!--link to style sheet-->
+        <!--<link rel="stylesheet" type="text/css" href="style.css">--> 
+        
+        <!--Style tag-->
+        <style>
+            
+            body{
+                background-color: #3272b2;
+                /*--comma for backup fonts if preferred is unavailable-->*/
+                font-family: courier,sans-serif;
+                color:rgb(213, 237, 255);
+                }
+            
+            .titleSize{
+                text-align: center;
+                text-decoration: underline;
+                margin-top:50px;
+                margin-bottom:20px;
+                }
+
+            h3{
+                text-align:center;
+                text-decoration: underline;
+                font-size:1em;
+                }
+            
+            p{
+                font-size:1.25em;
+                text-align: center;
+                }
+
+            ul{
+                margin-left:120px;
+                }
+
+            ol{
+                margin-left:120px;
+
+                }
+            
+            #footer{
+                position: fixed;
+                left:0;
+                bottom:0;
+                height:60px;
+                width:100%;
+                background-color:rgb(213,237,255);
+                color:#3272b2;
+                text-align: center
+                }
+            
+            #footer_el{
+                margin:20px
+                }
+        
+        </style>
+    
+    </head>
+
+    <!--body tag-->
+    <body>
+        
+        <!-- classes and ids overide element tags in CSS--> 
+        <h1 class="titleSize">Hello World! 2.0</h1>
+        
+        <br>
+        
+        <p>--Tyler Shinkle--</p>
+        
+        <p>--Vicom 128 WEb Development with HTML/CSS--</p>
+        
+        <br>
+        
+        <br>
+        
+        <br>
+        
+        <h3> Course Objectives</h3>
+        
+        <ul>
+        
+            <li>Learn HTML5</li>
+            <li>Style using CSS</li>
+            <li>FTP to a web server</li>
+            <li>Reactive Web Design</li>
+            <li>Have Fun</li>
+
+        </ul>
+        
+        <br>
+        
+        <br>
+        
+        <br>
+        
+        <h3>Personal Priorities</h3>
+        
+        <ol>
+            
+            <li>Improve understanding of DOM</li>
+            <li>Improve understanding of Formatting specifically flex-box</li>
+            <li>Improve implementation of meta-data</li>
+            <li>Learn Reactive Web Design such as media queries</li>
+            <li>Improve understanding of design / project work flow</li>
+            <li>Improve understanding of fonts and typography</li>
+        
+        </ol>
+        
+        <div id="footer"> 
+            <p id="footer_el" style="display:inline-block">footer</p>
+            <p id="footer_el" style="display:inline-block">footer</p>
+            <p id="footer_el" style="display:inline-block">footer</p>
+        </div>
+    </body>
+</html>
