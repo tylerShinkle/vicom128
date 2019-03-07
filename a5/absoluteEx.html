@@ -23,16 +23,18 @@
             
             <nav>
                 <a href="static.html">STATIC</a>
-                <a href="relative.html" class="activePage">RELATIVE</a>
+                <a href="relative.html">RELATIVE</a>
                 <a href="fixed.html">FIXED</a>
-                <a href="absolute.html">ABSOLUTE</a>
+                <a href="absolute.html" class="activePage">ABSOLUTE</a>
                 <a href="sticky.html">STICKY</a>
             </nav>
             
-            <section>
-                <h1>Relative Position</h1>
-                <article id="posIntro">When you set an elements position to relative it is positioned relative to its normal position. For example if you want an element to shift 20 pixels down you could set it's position to relative and then add a top attribute with the value of 20px.<a href="relativeEx.html"> Click here to move this whole artice 20 pixels down and back again.</a> You can think of it like the relative element is getting pushed or pulled by the directions you specify. In the example here the top is pushing the element down by 20 px, you could also do <code>top: -20px;</code> and the element will be pulled up by 20 px. Positive is push and negative is pull.</article>
+            <div id="divEx">
+            <section id="absoluteExample">
+                <h1>Absolute Position</h1>
+                <article id="posIntro">Absolute postitioning positions the element relative to it's first non-static positioned ancestor.This is useful for positioned containers and arranging elements within them. For instance you could position this article so it is at the top-right of it's parent element. <a href="absolute.html">Click here to move this element to the top-right and back.</a> Just like fixed position the margins still apply as they are part of the element.</article>
             </section>
+            </div>
             
             <footer>
                 &copy; 2019
