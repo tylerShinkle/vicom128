@@ -34,11 +34,14 @@
                 <article id="posIntro">Fixed positioning affixes the element relative to the window, it will always remain in the same spot on the viewport or window. It uses the same auxillary attributes as relative positioning such as top, left, bottom, and right. <a href="fixed.html">Click here to fix this article to the bottom your screen and switch it back again.</a> It will stay in its place relative to the window regardless of other content. (Try squishing your window down) <br><br>Notes: <br><br>I adjusted the z-index to -1  so you can interact with the nav bar regardless of what happens. Read about the z-index <a href="https://www.w3schools.com/cssref/pr_pos_z-index.asp">here.</a>
                 <br>
                 <br>
-                The margins will still apply as they are part of the element. This is why the element is not on the very bottom.</article>
+                The margins will still apply as they are part of the element. This is why the element is not on the very bottom.
+                <h4>The code</h4>
+                <code>element{<br>&nbsp;&nbsp; position:fixed;<br>&nbsp;&nbsp; bottom:0;<br>&nbsp;&nbsp; z-index:-1;<br>}</code>
+                </article>
             </section>
             
             <footer>
-                &copy; 2019
+                 <p>&copy; 2019</p>
             </footer>
         
         </main>
