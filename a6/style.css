@@ -1,0 +1,185 @@
+body{
+    background-color: #f2eeee;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+header{
+    text-align: center;
+    background-color: black;
+    color:#f2eeee;
+    font-family: 'Alex Brush', sans-serif;
+    font-size:1.25em;
+    width: 100%;
+    position: sticky;
+    top:0;
+    margin-bottom: 2em;
+    z-index: 1;
+    
+}
+
+header h1{
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.line{
+    height:5px;
+    background-color:#1b6f48;
+}
+#menu{
+    display: inline-block;
+    width:1em;
+    height: auto;
+    position: absolute;
+    right:5%;
+    top:30%;
+}
+
+#menu:hover{
+    opacity: .75;
+}
+
+#menu:active{
+    opacity: .5;
+}
+
+section h2{
+    text-align: center;
+}
+
+h3{
+    text-decoration: underline;
+}
+
+aside{
+    background-color: black;
+    color:white;
+    width:25%;
+    height:20em;
+    margin:1em 1.5% 2em 2.5%;
+    text-align: center;
+    float:left;
+    position: absolute;
+}
+
+aside p{
+    text-align: center;
+}
+
+article{
+    background-color: black;
+    color:white;
+    width:65%;
+    height:20em;
+    margin:1em 2.5% 2em 1.5%;
+    text-align: center;
+    float:right;
+    overflow: auto;
+}
+
+article p{
+    padding-top: 3em;
+    padding-bottom: 3em;
+    text-align:left;
+    margin:0 2em;
+}
+
+.container{
+    display: block;
+    clear:both;
+}
+
+footer{
+    position:fixed;
+    bottom:0;
+    text-align:center;
+    left:1%;
+    width: 98%;
+    background-color: black;
+    color:white;
+    height:2.5em;
+    z-index:1;
+    padding-top: 1em;
+}
+
+.line2{
+    height: 5px;
+    background-color:#1b6f48;
+    position:fixed;
+    bottom:3.4em;
+    width:98%;
+    opacity:1;
+    z-index: 1;
+}
+
+#spacer{
+    height: 3em;
+    width:5em;
+    clear: both;
+}
+
+.Add{
+    height:4.5em;
+    margin-top: 6em;
+    max-width: 90%;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+a:hover{
+    color:#1b6f48; 
+}
+
+a:active{
+    color:rgba(27, 111, 72, 0.48);
+}
+
+/* container div with only visible element being the menu.*/
+.dropdown{
+    position:absolute;
+    display: inline-block;
+    right:3%;
+    top:30%;
+}
+
+/*invisible content*/
+.drop-content{
+    display: none;
+    position: absolute;
+    right:0px;
+    top:0px;
+    background-color:#f2eeee;
+    opacity: .9;
+    min-width: 160px;
+    z-index: 1;
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+/*styling links of invisible content*/
+.drop-content a{
+    color:black;
+    padding:10px;
+    text-decoration: none;
+    display: block;
+}
+
+/*how dropdown behaves on hover*/
+
+.drop-content a:hover{
+    background-color: black;
+    color:white;
+}
+
+/*when the only element in the container div is hovered upon, the invisible content is set to block display and is visible within the div*/
+.dropdown:hover .drop-content{
+    display: block;
+}
+
+

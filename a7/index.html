@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Links  &amp; Lists</title>
+        <meta charset="utf-8">
+        <meta name="description" content=" A tutorial in HTML & CSS explaining Links and Lists.">
+        <meta name="keywords" content="links, lists, html, css, tutorial">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/html5.png" type="image/x-icon" />
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    </head>
+    
+    <body>
+        
+        <main>
+            
+            <header>
+                <h1>Links &amp; Lists</h1>
+            </header>
+            
+            <nav>
+                <ul>
+                    <li><a href=#links>Links&nbsp;</a></li>
+                    <li><a href=#lists>Lists&nbsp;</a></li>
+                    <li><a href=#tables>Tables&nbsp;</a></li>
+                </ul>
+            </nav>
+            
+            <section>
+                <div id=links>
+                    <h2>Links help you travel across the web!</h2>
+                    <p>
+                        Links in HTML are denoted by the &lt;a&gt; &lt;/a&gt; tag set. Known as anchor tags. Here is a list of some common attributes used to modify anchor tags...
+                    </p>
+                    <ul>
+                        <li>href=URL or #ID</li>
+                            <ul>
+                                <li>The href attribute descibes the links destination. When you click on a link , this is where you will go. </li>
+                                <li>Here is an example...</li>
+                                <ul>
+                                    <li>&lt;a href=https://www.google.com/&gt; Google&lt;/a&gt;<br><br>Would evaluate to the next item on this list with the help of CSS.</li>
+                                    <li>
+                                    <a href=https://www.google.com target="_blank">
+                                        Google
+                                    </a>
+                                     &nbsp;&lt;-- This is the link made from the anchor tag above.
+                                    </li>
+                                </ul>
+                            </ul>
+                                <br>
+                            <li>
+                                target="_blank" or "_parent" or "_self" or "_top"
+                            </li>
+                                <ul>
+                                    <li>
+                                    The target attribute describes how the link opens. When target is set to "_blank" it opens the link in a new tab. That would look like this...
+                                    </li>
+                                    <ul>
+                                        <li>
+                                            &lt;a href=https://www.google.com/ target="_blank"&gt; Google&lt;/a&gt;
+                                        </li>
+                                        <li>
+                                            The above tag would evaluate to a link like this ->
+                                            <a href=https://www.google.com target="_blank"> Google</a><br><br>If you click the link above it will open iin a new tab.
+                                        </li>
+                                    </ul>
+                                </ul>
+                        <br>
+                        <li>
+                            For more about anchor tags or links click <a href="https://www.w3schools.com/tags/tag_a.asp" target="_blank">here</a> and read on!
+                        </li>
+                    </ul>
+                </div>
+                
+                <div id=lists>
+                    <h2>Lists are very useful!</h2>
+                    <p>There are 3 different types of lists in HTML...</p>
+                    <ol>
+                        <li>Unordered Lists</li>
+                            <ul>
+                                <li>Unordered lists use the tags &lt;ul&gt;&lt;/ul&gt; to define themselves and &lt;li&gt;&lt;/li&gt; to define the items on the list. (know as list items) These lists use bullets or other symbols to denote the beginning of a new list item.</li>
+                                <li>Here is an example of an unordered list...</li>
+                                <ul>
+                                    <li>Item One</li>
+                                    <li>Item Two</li>
+                                    <li>Item Three</li>
+                                </ul>
+                                <li>The HTML looks like this...</li>
+                                <ul>
+                                <li class=code>    
+                                <code>
+                                &lt;ul&gt;<br>
+                                     &nbsp;&nbsp; &lt;li&gt;Item One&lt;/li&gt;<br>
+                                     &nbsp;&nbsp; &lt;li&gt;Item Two&lt;/li&gt;<br>
+                                     &nbsp;&nbsp; &lt;li&gt;Item Three&lt;/li&gt;<br>
+                                &lt;/ul&gt;
+                                </code>
+                                </li>
+                                </ul>
+                            </ul>
+                        <!--ordered lists-->
+                        <li>Ordered Lists</li>
+                        <ul>
+                                <li>Ordered lists use the tags &lt;ol&gt;&lt;/ol&gt; to define themselves and &lt;li&gt;&lt;/li&gt; to define the items on the list. (know as list items)These lists use numbers by default to signify the beginning of a new list item.</li>
+                                <li>Here is an example of an ordered list...</li>
+                                <ol>
+                                    <li>Item One</li>
+                                    <li>Item Two</li>
+                                    <li>Item Three</li>
+                                </ol>
+                                <li>The HTML looks like this...</li>
+                                    <ul>
+                                        <li class=code>    
+                                            <code>
+                                            &lt;ol&gt;<br>
+                                            &nbsp;&nbsp; &lt;li&gt;Item One&lt;/li&gt;<br>
+                                            &nbsp;&nbsp; &lt;li&gt;Item Two&lt;/li&gt;<br>
+                                            &nbsp;&nbsp; &lt;li&gt;Item Three    &lt;/li&gt;<br>
+                                            &lt;/ol&gt;
+                                            </code>
+                                        </li>
+                                    </ul>
+                            </ul>
+                        <li>Description Lists</li>
+                        <ul>
+                                <li>Description lists use the tags &lt;dl&gt;&lt;/dl&gt; to define themselves and &lt;dt&gt;&lt;/dt&gt; to define the terms of the list as well as &lt;dd&gt;&lt;/dd&gt; to define the definitions.</li>
+                                <li>Here is an example of a description list...</li>
+                                <dl>
+                                    <dt>Item One</dt>
+                                    <dd>Description One</dd>
+                                    <dt>Item Two</dt>
+                                    <dd>Description Two</dd>                 <dt>Item Three</dt>
+                                    <dd>Description Three</dd>                
+                                </dl>
+                                <li>The HTML looks like this...</li>
+                                <ul>
+                                <li class=code>    
+                                <code>
+                                &lt;dl&gt;<br>
+                                     &nbsp;&nbsp; &lt;dt&gt;Item One&lt;/dt&gt;<br>
+                                     &nbsp;&nbsp; &lt;dd&gt;Description One&lt;/dd&gt;<br>
+                                     &nbsp;&nbsp; &lt;dt&gt;Item Two&lt;/dt&gt;<br>
+                                     &nbsp;&nbsp; &lt;dd&gt;Description Two&lt;/dd&gt;<br>
+                                     &nbsp;&nbsp; &lt;dt&gt;Item Three &lt;/dt&gt;<br>
+                                     &nbsp;&nbsp; &lt;dd&gt;Description Three&lt;/dd&gt;<br>
+                                &lt;/dl&gt;
+                                </code>
+                                    </li>
+                                </ul>
+                            </ul>
+                    </ol>
+                    <h3>You can also change the styles of lists with CSS!</h3>
+                    <ul>
+                        <li>Different unordered lists styles are achieved like this in the CSS file...<br><br>ul{<br>&nbsp;&nbsp;list-style-type:square;<br>}<br><br>(circle, disc and none are also alternate styles in addition to square.) </li>
+                        <li>Here is a unordered list with the square list-style-type...</li>
+                        <ul id=square>
+                            <li>These</li>
+                            <li>Bullets</li>
+                            <li>Are</li>
+                            <li>Sqaure</li>
+                        </ul>
+                        <li>Here is one with circles...</li>
+                        <ul id=circle>
+                            <li>These</li>
+                            <li>Bullets</li>
+                            <li>Are</li>
+                            <li>Sqaure</li>
+                        </ul>
+                    </ul>
+                </div>
+                
+                <!--table-->
+                <div id=tables>
+                    <h2>Get Organized with Tables!</h2>
+                    <p>Tables have a &lt;table&gt; tag, a &lt;th&gt; tag (table head), a &lt;tr&gt; tag (table row) and a &lt;td&gt; tag (table data).</p>
+                    <br>
+                    <p>Here is an example table...</p><br>
+                    <!--four by four, each row different color-->
+                    <table>
+                        <tr id=rowOne>
+                            <th>ID#</th>
+                            <th>Name</th>
+                            <th>Password</th>
+                            <th>Email</th>
+                        </tr>
+                        <tr id=rowTwo>
+                            <td>12345</td>
+                            <td>Jon</td>
+                            <td>pqwe4!</td>
+                            <td>jon@email.com</td>
+                        </tr>
+                        <tr id=rowThree>
+                            <td>56789</td>
+                            <td>June</td>
+                            <td>asdfas</td>
+                            <td>june@email.com</td>
+                        </tr>
+                        <tr id=rowFour>
+                            <td>14356</td>
+                            <td>Jill</td>
+                            <td>fffeww</td>
+                            <td>jill@email.com</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <p>The HTML code looks like this...</p>
+                    <pre>
+                        <xmp>
+                    <table>
+                        <tr id=rowOne>
+                            <th>ID#</th>
+                            <th>Name</th>
+                            <th>Password</th>
+                            <th>Email</th>
+                        </tr>
+                        <tr id=rowTwo>
+                            <td>12345</td>
+                            <td>Jon</td>
+                            <td>pqwe4!</td>
+                            <td>jon@email.com</td>
+                        </tr>
+                        <tr id=rowThree>
+                            <td>56789</td>
+                            <td>June</td>
+                            <td>asdfas</td>
+                            <td>june@email.com</td>
+                        </tr>
+                        <tr id=rowFour>
+                            <td>14356</td>
+                            <td>Jill</td>
+                            <td>fffeww</td>
+                            <td>jill@email.com</td>
+                        </tr>
+                    </table>
+                        </xmp>
+                    </pre>
+                    <br>
+                    <p>The CSS code looks like this...</p>
+                    <pre id=CSS>
+                        <xmp>
+table{
+    width: 100%;
+}
+
+table,th, td{
+    border:2px solid black;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+tr, th, td{
+    height: 2em;
+}
+
+#rowOne{
+    background-color: antiquewhite;
+}
+
+#rowTwo{
+    background-color: #d7fae2;
+}
+
+#rowThree{
+    background-color: #ded7fa;
+}
+
+#rowFour{
+    background-color: #fad7df;
+}
+                        </xmp>
+                    </pre>
+                    <p>Learn more about tables <a href="https://www.w3schools.com/html/html_tables.asp" target="_blank">here!</a></p>
+                </div>
+            </section>
+            
+            <div id=spacer>
+            </div>
+            <footer>
+                <p>&copy; 2019</p>
+            </footer>
+        
+        </main>
+    
+    </body>
+
+</html>

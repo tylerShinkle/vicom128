@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',sans-serif;
+}
+
+body{
+    overflow: auto;
+}
+header{
+    text-align: center;
+    background-color: #30e0d2;
+    padding: 1% 0%;
+    margin: 0% auto;
+    width: 100%;
+}
+
+nav{
+    text-align: center;
+    background-color: black;
+    position: sticky;
+    top: 0;
+}
+nav ul li{
+    display: inline-block;
+    margin:1em 1em;
+    color:#30e0d2;
+    box-shadow: 2px 3px;
+    
+}
+
+nav li a:hover{
+    color: white;
+}
+
+nav li a:active{
+    opacity: .5;
+}
+
+section div{
+    width:80%;
+    margin: 2em auto;
+    border: 5px solid #30e0d2;
+    padding:2em 1em 2em 1em;
+    overflow: auto;
+    box-shadow: 5px 5px black;
+}
+
+section h2, section h3{
+    text-align: center;
+    margin: 1em;
+}
+
+section div p{
+    text-align: left;
+}
+
+section div ul, section div ol, section div dl{
+    margin: 1em 2em;
+}
+
+section div ul li, section div ol li, section div dl dd{
+    margin: 1em 2em;
+}
+
+section div ul ul{
+    margin-left: 5%;
+    margin-top: 1em;
+}
+
+section div ul ul li{
+    margin-top: 1em;
+}
+
+a{
+    text-decoration: none;
+    color:#30e0d2;
+}
+
+section a:hover{
+    color:black;
+    opacity: .5;
+}
+
+section a:active{
+    opacity:.25 ;
+    color: black;
+}
+
+.code{
+    list-style-type: none;
+}
+
+#square{
+    list-style-type: square;
+}
+
+#circle{
+    list-style-type: circle;
+}
+
+table{
+    width: 100%;
+}
+
+table,th, td{
+    border:2px solid black;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+tr, th, td{
+    height: 2em;
+}
+
+#rowOne{
+    background-color: antiquewhite;
+}
+
+#rowTwo{
+    background-color: #d7fae2;
+}
+
+#rowThree{
+    background-color: #ded7fa;
+}
+#rowFour{
+    background-color: #fad7df;
+}
+
+#CSS{
+    margin-left: 6em;
+}
+
+footer{
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color:#30e0d2;
+}
+
+#spacer{
+    background-color: white;
+    height: 4em;
+}
+footer p{
+    margin: 1em;
+}

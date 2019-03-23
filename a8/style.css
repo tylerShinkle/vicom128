@@ -1,0 +1,183 @@
+/*mobile*/
+/*css for devices smaller than 700px*/
+/*1 x 4 grid (all one column)*/
+*{
+    padding:0em;
+    margin:0em;
+}
+
+#top{
+    position: sticky;
+    top:0;
+}
+
+body{
+    max-width: 2000px;
+    margin: 0% auto;
+    font-family: 'Roboto',sans-serif;
+}
+header {
+    height: 4em;
+    background-image: url(images/backdrop.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
+header img{
+    height: 3em;
+    width:auto;
+    padding-top:.5em;
+}
+nav{
+    padding: .25em;
+    font-size:1.25em;
+    text-align: center;
+    font-weight: bold;
+    background-color: #3c3c3c;
+}
+
+nav p{
+    display: inline-block;
+    margin:.25em 1.25em;
+}
+
+nav a{
+    text-decoration: none;
+    color:white;
+}
+
+nav a:hover{
+    opacity: .75;
+    transition-delay: 0.1s;
+}
+
+nav a:active{
+    opacity:.5;
+}
+
+section{
+    text-align: center;
+}
+
+
+.product{
+    margin:3em.5em;
+}
+.productLogo{
+    width:180px;
+    margin-top:1.7em;
+}
+
+.productLogoText{
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: .01em;
+    margin-top: 1.7em
+}
+
+.productImage{
+    width:300px;
+    height: auto;
+}
+
+.productDescription{
+    padding:.12em;
+    margin:1em .2em .2em .2em;
+    font-size:1em;
+}
+
+.productsLink{
+    margin:1em .5em 0em .5em;
+    color: #723072;
+}
+
+.productsLink:hover{
+    text-decoration: underline;
+    cursor:pointer;
+}
+/*tablet*/
+@media only screen and (min-width: 700px){
+/*css for devices with width between 700 and 1024px*/  
+/*2x2 grid*/
+    header {
+        height: 5em;
+    }
+
+    header img{
+        height: 4em;
+    }   
+
+    nav{
+        font-size:1.25em;
+    }
+
+    nav p{
+        margin:.25em 3.5em;
+    }
+
+    .productLogo{
+        width:200px;
+        margin-top:3em;
+    }
+    
+    .productImage{
+        width:225px;
+    }
+    
+    .productDescription{
+        font-size:1.25em;
+        margin-bottom: .5em;
+    }
+    
+    .productsLink{
+        margin:2em 1em 0em 1em;
+        font-size:1.25em;
+    }
+    
+    .gridContainer{
+        display: grid;
+        grid-template-columns: auto auto;
+        
+    }
+
+}
+
+/*desktop*/
+/*4x1 grid*/ 
+@media only screen and (min-width: 1024px){
+/*css for devices with width 1024 and above*/ 
+    header{
+        height: 6em;
+    }
+    
+    header img{
+        height: 5em;
+    }
+    nav p{
+    margin:.25em 6em;
+    }
+    
+    .productLogo{
+        width:200px;
+        margin-top: 4em;
+    }
+    
+    .productDescription{
+        font-size: 1.25em;
+        margin-bottom: 1em;
+    }
+    
+    .productImage{
+        width:225px;
+    }
+    
+    .productsLink{
+        font-size:1.25em;
+    }
+    .gridContainer{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        
+    }
+
+}
