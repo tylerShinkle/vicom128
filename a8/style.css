@@ -110,6 +110,26 @@ footer p{
 .productsLink{
     margin-top: 3em;
 }
+
+#iPad{
+    margin: 10% 10%;
+}
+
+#iPadImage{
+    height: 14em;
+}
+
+#mac{
+    margin: 3em 1em;
+}
+
+.mobileFooter{
+    position: fixed;
+    width: 100%;
+    bottom:0;
+}
+
+
 /*tablet*/
 @media only screen and (min-width: 700px){
 /*css for devices with width between 700 and 1024px*/  
@@ -151,6 +171,26 @@ footer p{
         width:100%;
         bottom: 0;
     }
+    
+    #iPadHeader, #macHeader, #iPhoneHeader1,#iPhoneHeader2{
+        height:3em;
+        width: auto;
+        margin:1em;
+    }
+    
+    #iPadImage, #macImage, #iPhoneImage1, #iPhoneImage2{
+        height:30em;
+        width:auto;
+    }
+    
+    #iPadDescription, #macDescription, #iPhoneDescription1,#iPhoneDescription2 {
+        font-size:2em;
+        }
+    #iPad{
+        margin:2%;
+    }
+    
+    
 }
 
 /*desktop*/
@@ -182,6 +222,7 @@ footer p{
     .productsLink{
         font-size:1.25em;
     }
+    
     .gridContainer{
         display: grid;
         grid-template-columns: auto auto auto auto;
