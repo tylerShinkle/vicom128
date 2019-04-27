@@ -136,6 +136,11 @@ footer p{
     margin-top:1em;
 }
 
+#iPadProImage{
+    height:16em;
+    margin: 0em 2em
+}
+
 
 /*tablet*/
 @media only screen and (min-width: 700px){
@@ -190,9 +195,14 @@ footer p{
         width:auto;
     }
     
-    #iPadDescription, #macDescription, #iPhoneDescription1,#iPhoneDescription2, #macbookDescription {
+    #iPadDescription, #macDescription, #iPhoneDescription1,#iPhoneDescription2, #macbookDescription{
         font-size:2em;
         }
+    
+    #iPadProDescription{
+        font-size:2em;
+        margin-top: -2em
+    }
     
     #iPad{
         margin:2%;
@@ -206,6 +216,11 @@ footer p{
         height:26em;
         width:auto;
     }
+    
+    #iPadProImage{
+    height:32em;
+    width: auto;
+}
     
     
 }
@@ -254,6 +269,7 @@ footer p{
     #iPhoneGrid{
         display: grid;
         grid-template-columns: auto auto;
+        padding-top: 1em;
     }
     
     #iPhoneImage1, #iPhoneImage2{
@@ -275,6 +291,17 @@ footer p{
         height: 20em;
         margin-top: 1em;
         
+    }
+    
+    #iPadGrid{
+        display: grid;
+        grid-template-columns: auto auto;
+        padding-top: 1em;
+    }
+    
+     #iPadProImage{
+        height: 32em;
+         margin: 1.2em;
     }
     
 

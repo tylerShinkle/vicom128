@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <!-- add favicon-->
+        <title>devpendium</title>
+        <meta charst="UTF-8">
+        <meta name="description" content="devpendium web development tutorials.">
+        <meta name="keywords" content="HTML, CSS, Javascript, php, node, tutorials, free">
+        <meta name="author" content="Tyler Shinkle">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    </head>
+    
+    <body>
+    <!--overlays on top-->
+        
+        <!--Mobile burger menu overlay-->
+        <section id="menuOver" class="overlay">
+            <!--exit overlay button-->
+            <button id=menuClose class="close">
+                	&#215;
+            </button>
+            <!--overlay content-->
+            <div class="overlayContentContainer">
+                    <a href="html.html">html</a>    
+                    <a href="css.html">css</a>
+                    <a href="js.html">java script</a>
+                    <a href="php.html">php</a>
+                    <a href="node.html">node.js</a>
+                    <a href="contact.html">contact</a>
+            </div>
+        </section>
+        
+        <!--Mobile language overlay-->
+        <section id="langOver" class="overlay">
+            <button id=langClose class="close">
+                	&#215;
+            </button>
+            <div class="overlayContentContainer">
+                <a href="html.html">html</a>
+                <a href="css.html">css</a>
+                <a href="js.html">java script</a>
+                <a href="php.html">php</a>
+                <a href="node.html">node.js</a>
+            </div>
+        </section>
+        
+        <!--Mobile references overlay-->
+        <section id="projectsOver" class="overlay">
+            <button id=projectsClose class="close">
+                	&#215;
+            </button>
+            <div class="overlayContentContainer">
+                <a href="html.html">html</a>
+                <a href="css.html">css</a>
+                <a href="js.html">java script</a>
+                <a href="php.html">php</a>
+                <a href="node.html">node.js</a>
+            </div>
+        </section>
+        
+        <!--Mobile references overlay-->
+        <section id="refOver" class="overlay">
+            <button id=refClose class="close">
+                	&#215;
+            </button>
+            <div class="overlayContentContainer">
+                <a href="html.html">html</a>
+                <a href="css.html">css</a>
+                <a href="js.html">java script</a>
+                <a href="php.html">php</a>
+                <a href="node.html">node.js</a>
+            </div>
+        </section>
+        
+        
+        <!--mobile title bar-->
+        <nav id="mobileTitle">
+            <div id="logo">
+                <a href="index.html">devpendium</a>
+            </div>
+            <!--access menu overlay on mobile-->
+            <button id="burger"  class="open" value=menuOver>
+                <!--diplay overlay on click-->
+                &#9776;
+            </button>
+        </nav>
+        
+        <!--mobile directory bar-->
+        <nav id="mobileDirectory">
+            <!--access language overlay on mobile-->
+            <button id="language" class="open" value="langOver">
+                language
+            </button>
+            
+            <div id="rightContainer">
+                <!--access projects overlay on mobile-->
+                <button id="projects" class="open" value="projectsOver">
+                    projects
+                </button>
+                <!--access references overlay on mobile-->
+                <button id="references" class="open" value="refOver">
+                    references
+                </button>
+            </div>
+        </nav>
+        
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>
