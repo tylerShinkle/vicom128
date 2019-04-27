@@ -16,7 +16,10 @@
     <body>
     <!--overlays on top-->
         
+        
+        <main>
         <!--Mobile burger menu overlay-->
+        <div class="overlayWrapper">
         <section id="menuOver" class="overlay">
             <!--exit overlay button-->
             <button id=menuClose class="close">
@@ -24,14 +27,25 @@
             </button>
             <!--overlay content-->
             <div class="overlayContentContainer">
-                    <a href="html.html">html</a>    
+                    <a href="html.html">html</a> 
+                        <a class = overlayRight href="html.html/#references">>references</a>
+                        <a class = overlayRight href="html.html/#projects">>projects</a>
                     <a href="css.html">css</a>
+                        <a class = overlayRight href="css.html/#references">>references</a>
+                        <a class = overlayRight href="css.html/#projects">>projects</a>
                     <a href="js.html">java script</a>
+                        <a class = overlayRight href="js.html/#references">>references</a>
+                        <a class = overlayRight href="js.html/#projects">>projects</a>
                     <a href="php.html">php</a>
+                        <a class = overlayRight href="php.html/#references">>references</a>
+                        <a class = overlayRight href="php.html/#projects">>projects</a>
                     <a href="node.html">node.js</a>
+                        <a class = overlayRight href="node.html/#references">>references</a>
+                        <a class = overlayRight href="node.html/#projects">>projects</a>
                     <a href="contact.html">contact</a>
             </div>
         </section>
+        </div>
         
         <!--Mobile language overlay-->
         <section id="langOver" class="overlay">
@@ -39,6 +53,7 @@
                 	&#215;
             </button>
             <div class="overlayContentContainer">
+                <p>languages</p>
                 <a href="html.html">html</a>
                 <a href="css.html">css</a>
                 <a href="js.html">java script</a>
@@ -47,12 +62,13 @@
             </div>
         </section>
         
-        <!--Mobile references overlay-->
+        <!--Mobile projects overlay-->
         <section id="projectsOver" class="overlay">
             <button id=projectsClose class="close">
                 	&#215;
             </button>
             <div class="overlayContentContainer">
+                <p>projects</p>
                 <a href="html.html">html</a>
                 <a href="css.html">css</a>
                 <a href="js.html">java script</a>
@@ -67,6 +83,7 @@
                 	&#215;
             </button>
             <div class="overlayContentContainer">
+                <p>references</p>
                 <a href="html.html">html</a>
                 <a href="css.html">css</a>
                 <a href="js.html">java script</a>
@@ -92,7 +109,7 @@
         <nav id="mobileDirectory">
             <!--access language overlay on mobile-->
             <button id="language" class="open" value="langOver">
-                language
+                languages
             </button>
             
             <div id="rightContainer">
@@ -108,5 +125,6 @@
         </nav>
         
         <script type="text/javascript" src="js/script.js"></script>
+        </main>
     </body>
 </html>

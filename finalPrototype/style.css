@@ -6,11 +6,10 @@ body{
     letter-spacing: 1px;
     margin:0;
 }
-
 nav{
     background-color: black;
     color:white;
-    padding:.25em 0 .25em 1em;
+    padding:1vmin 0 1vmin 1vmin;
     border-bottom: 1px solid white;
 }
 
@@ -39,7 +38,7 @@ button{
     font-family: "Lato", sans-serif;
     font-size:1em;
     padding:0em;
-       line-height: 1.5;
+    line-height: 1.5;
     letter-spacing: 1px;
 }
 
@@ -49,46 +48,98 @@ button{
 
 #burger{
     display: inline-block;
-    position:absolute;
-    right:1em;
+    position: absolute;
+    right:1vmin;
 }
 .close{
     font-size:30px;
     position:absolute;
-    right:1em;
-    top:1em;
+    padding:0;
+    margin:0;
+    line-height: .8;
+    top:3vmin;
+    right:3vmin;
+    
+}
+
+.close:hover{
+    color:white;
 }
 
 .overlayContentContainer{
     display:table-cell;
     vertical-align: middle;
     text-align: center;
-    
-    
+    padding:3vmin;
 }
 
 .overlayContentContainer a{
     display:block;
-    font-size:1.25em;
-    margin:.8em 0;
+    font-size:1.125em;
+    width:35%;
+    margin:.125em auto;
+    text-align: left;
+    position: relative;
+    line-height: 1.125;
+    right:2%;
+    color:#ff2a6b;
     
+}
+
+.overlayContentContainer p{
+    width:35%;
+    margin:.125em auto;
+    text-align: left;
+    position: relative;
+    line-height: 2;
+    right:2%;
+    font-size:1.3em
+}
+
+.overlayContentContainer a:hover{
+    color:#fd84a9;
 }
 
 #rightContainer{
     position:absolute;
-    right:1em;
+    right:1vmin;
 }
 
 #rightContainer button{
-    margin-left:.75em;
+    margin-left:2vmin;
 }
 
+
+.overlayWrapper{
+    width:100%;
+    position:static;
+}
 .overlay{
     width:100%;
     height:100%;
     background-color: black;
-    position:fixed;
+    position:absolute;
     z-index:1;
     color:white;
     display:none;
+    text-align: center;
+    overflow: scroll;
 }
+
+.overlayContentContainer .overlayRight{
+    text-align: left;
+    position:relative;
+    left:2%;
+    margin:.25em auto;
+    font-size:1em;
+    line-height:1.125;
+    color:white;
+}
+
+.overlayContentContainer .overlayRight:hover{
+    color:white;
+}
+
+
+#langOver .overlayContentContainer a, #projectsOver .overlayContentContainer a, #refOver .overlayContentContainer a{
+line-height: 2;}
