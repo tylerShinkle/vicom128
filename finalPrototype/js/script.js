@@ -1,3 +1,4 @@
+/*eslint-env browser*/
 //array to hold button elements
 var buttonArray = [];
 
@@ -7,14 +8,17 @@ var buttonArray = [];
 // otherwise close it's parent node.
 function openOrClose(el) {
     "use strict";
-    var toOpenId, toOpen, toClose;
+    var toOpenId, toOpen, toClose, toHide;
+    toHide = document.getElementById("content");
     if (el.classList.contains("open")) {
+        toHide.style.display = "none";
         toOpenId = el.value;
         toOpen = document.getElementById(toOpenId);
         toOpen.style.display = "table";
     } else {
         toClose = el.parentNode;
         toClose.style.display = "none";
+        toHide.style.display = "block";
     }
 }
 
@@ -35,7 +39,7 @@ function init() {
     //load all buttons into array.
     buttonArray = document.getElementsByTagName('button');
     // for each element of array call addEars on it.
-    for (i = 0; i < buttonArray.length; i++) {
+    for (i = 0; i < buttonArray.length; i += 1) {
         addEars(i);
     }
 }

@@ -11,4 +11,143 @@
         <link type="text/css" rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     </head>
+    
+        <body>
+    <!--overlays on top-->
+        <!--Mobile burger menu overlay-->
+        <main>
+            <section id="menuOver" class="overlay">
+                <!--exit overlay button-->
+                <button id=menuClose class="close">
+                	&#215;
+                </button>
+                <!--overlay content-->
+                <div class="overlayContentContainer">
+                    <a href="html.html">html</a> 
+                        <a class = overlayRight href="html.html#ref">>references</a>
+                        <a class = overlayRight href="html.html#projects">>projects</a>
+                    <a href="css.html">css</a>
+                        <a class = overlayRight href="css.html#ref">>references</a>
+                        <a class = overlayRight href="css.html#projects">>projects</a>
+                    <a href="js.html">java script</a>
+                        <a class = overlayRight href="js.html#ref">>references</a>
+                        <a class = overlayRight href="js.html#projects">>projects</a>
+                    <a href="php.html">php</a>
+                        <a class = overlayRight href="php.html#ref">>references</a>
+                        <a class = overlayRight href="php.html#projects">>projects</a>
+                    <a href="node.html">node.js</a>
+                        <a class = overlayRight href="node.html#ref">>references</a>
+                        <a class = overlayRight href="node.html#projects">>projects</a>
+                    <a href="contact.html">contact</a>
+                </div>
+            </section>
+
+            <!--Mobile language overlay-->
+            <section id="langOver" class="overlay">
+                <button id=langClose class="close">
+                	&#215;
+                </button>
+                <div class="overlayContentContainer">
+                    <p>languages</p>
+                    <a href="html.html">html</a>
+                    <a href="css.html">css</a>
+                    <a href="js.html">java script</a>
+                    <a href="php.html">php</a>
+                    <a href="node.html">node.js</a>
+                </div>
+            </section>
+        
+        <!--Mobile projects overlay-->
+            <section id="projectsOver" class="overlay">
+                <button id=projectsClose class="close">
+                	&#215;
+                </button>
+                <div class="overlayContentContainer">
+                    <p>projects</p>
+                    <a href="html.html#projects">html</a>
+                    <a href="css.html#projects">css</a>
+                    <a href="js.html#projects">java script</a>
+                    <a href="php.html#projects">php</a>
+                    <a href="node.html#projects">node.js</a>
+                </div>
+            </section>
+        
+        <!--Mobile references overlay-->
+            <section id="refOver" class="overlay">
+                <button id=refClose class="close">
+                	&#215;
+                </button>
+                <div class="overlayContentContainer">
+                    <p>references</p>
+                    <a href="html.html#ref">html</a>
+                    <a href="css.html#ref">css</a>
+                    <a href="js.html#ref">java script</a>
+                    <a href="php.html#ref">php</a>
+                    <a href="node.html#ref">node.js</a>
+                </div>
+            </section>
+        <!--overlays done-->
+        <!--mobile title bar-->
+            <nav id="mobileTitle">
+                <div id="logo">
+                    <a href="index.html">devpendium</a>
+                </div>
+            <!--access menu overlay on mobile-->
+                <button id="burger"  class="open" value=menuOver>
+                <!--diplay overlay on click-->
+                &#9776;
+                </button>
+            </nav>
+        <!--mobile title bar done-->
+        
+        <!--mobile directory bar-->
+            <nav id="mobileDirectory">
+                <!--access language overlay on mobile-->
+                <button id="language" class="open" value="langOver">
+                languages
+                </button>
+            
+                <div id="rightContainer">
+                <!--access projects overlay on mobile-->
+                    <button id="projects" class="open" value="projectsOver">
+                    projects
+                    </button>
+                <!--access references overlay on mobile-->
+                    <button id="references" class="open" value="refOver">
+                    references
+                    </button>
+                </div>
+            </nav>
+        <!--mobile directory bar done-->
+        <!--start contnet-->
+        <div id="content">
+            <div id=htmlIntro class=content>
+                <article>
+                <h2>HTML Intro</h2>
+                This is the content for indexContentA! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. letsTestTheCssPropertyWordWrapItSeemsToBeWorkingYay!
+                </article>
+            </div>
+            <div id=htmlProjects class=content>
+                <div id=#projects></div>
+                <article>
+                     <h2>HTML Projects</h2>
+                This is the content for indexContentB! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. Will this ever overflow, it shouldn't it has no max height! This is the content for indexContentB! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. Will this ever overflow, it shouldn't it has no max height! This is the content for indexContentB! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. Will this ever overflow, it shouldn't it has no max height! This is the content for indexContentB! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. Will this ever overflow, it shouldn't it has no max height!
+                </article>
+            </div>
+            <div id=htmlRef class=content>
+                <div id="ref"></div>
+                <article>
+                <h2>HTML References</h2>
+                This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!!         This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!!         This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!!         This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!!         This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!!         This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!! 
+                </article>
+            </div>
+        </div>
+        <!--end content-->
+        <footer>
+            <a href="contact.html">Contact Us</a>
+            <p>&copy;2019</p>
+        </footer>
+        </main>
+        <script src="js/script.js"></script>
+    </body>
 </html>
