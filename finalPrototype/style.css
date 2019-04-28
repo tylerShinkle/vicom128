@@ -198,3 +198,97 @@ footer{
     font-size:1em;
     padding: 1em 0em 0em 0em;
 }
+
+form{
+    color:white;
+    display: flex;
+    margin:2em auto;
+    display:table;
+}
+
+fieldset{
+    display: table;
+}
+
+input{
+    display:block;
+    width:20em;
+    height: 2em;
+    margin:auto;
+}
+
+textArea{
+    display: block;
+    width:20em;
+    height:20em;
+    margin: auto;
+}
+
+#abutt{
+    color:white;
+    background-color: black;
+    border:1 px solid white;
+    border-radius: 2em;
+    font-family: "Lato", sans-serif;
+}
+
+#abutt:hover{
+    color:#ff2a6b;
+}
+
+#abutt:active{
+    opacity: .5;
+}
+
+#confirmation{
+    color:white;
+    font-size:16px;
+    font-weight: normal;
+    text-align:center;
+}
+
+   #desktopDirectory{
+        display:none;
+    }
+
+@media screen and (min-width:800px){
+    #mobileDirectory{
+        display:none;
+    }
+    
+    #burger{
+        display:none;
+    }
+    
+    #desktopDirectory{
+        display:block;
+    }
+        
+    .desktopDir{
+        display:inline-block;
+        margin-right: 2em;
+    }
+    
+    .tier{
+        display:none;
+    }
+    
+    .tier li{
+        text-align:left;
+    }
+    
+    .tierContainer:hover .tier{
+        display:block;
+        position:absolute;
+        background-color: black;
+        border:1px solid white;
+        top:3.45em;
+        list-style-type: none;
+    }
+    
+    .tierContainer:hover .tier li{
+        text-align: left;
+        padding:0;
+        margin: .5em 1.7em .5em 0;
+    }
+}

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
-        <head>
+<html lang="en">
+
+     <head>
         <!-- add favicon-->
-        <title>devpendium | php</title>
-        <meta charst="UTF-8">
+        <title>devpendium</title>
+        <meta charset="UTF-8">
         <meta name="description" content="devpendium web development tutorials.">
         <meta name="keywords" content="HTML, CSS, Javascript, php, node, tutorials, free">
         <meta name="author" content="Tyler Shinkle">
@@ -12,10 +13,9 @@
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     </head>
     
-        <body>
-    <!--overlays on top-->
+    <body>
+         <!--overlays on top-->
         <!--Mobile burger menu overlay-->
-        <main>
             <section id="menuOver" class="overlay">
                 <!--exit overlay button-->
                 <button id=menuClose class="close">
@@ -119,7 +119,7 @@
                 </div>
             </nav>
         <!--mobile directory bar done-->
-            <!--desktop directory bar-->
+        <!--desktop directory bar-->
             <nav id="desktopDirectory">
                 <div class=tierContainer>
                     <a  href="html.html" class="desktopDir">html</a>
@@ -159,35 +159,60 @@
                 <a href="contact.html">contact</a>
             </nav>
         <!-- end desktop directory bar-->
-        <!--start contnet-->
-        <div id="content">
-            <div id=phpIntro class=content>
-                <article>
-                <h2>PHP Introduction</h2>
-                This is the content for indexContentA! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. letsTestTheCssPropertyWordWrapItSeemsToBeWorkingYay!
-                </article>
-            </div>
-            <div id=phpProjects class=content>
-                <div id=#projects></div>
-                <article>
-                     <h2>PHP Projects</h2>
-                This is the content for indexContentB! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. Will this ever overflow, it shouldn't it has no max height! This is the content for indexContentB! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. Will this ever overflow, it shouldn't it has no max height! This is the content for indexContentB! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. Will this ever overflow, it shouldn't it has no max height! This is the content for indexContentB! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. Will this ever overflow, it shouldn't it has no max height!
-                </article>
-            </div>
-            <div id=phpRef class=content>
-                <div id="ref"></div>
-                <article>
-                <h2>PHP References</h2>
-                This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!!         This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!!         This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!!         This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!!         This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!!         This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!! 
-                </article>
-            </div>
-        </div>
-        <!--end content-->
-        <footer>
-            <a href="contact.html">Contact Us</a>
-            <p>&copy;2019</p>
-        </footer>
-        </main>
+        <h2 id="confirmation">Your message has been sent!</h2>
+        <form id="contact" action="sendmail.php" method="post">
+                        <fieldset>
+                            <legend>Contact Us</legend>
+                            <label>First Name:</label>
+                            <input type="text" name="first_name" placeholder="First Name">
+                            <label>Last Name:</label>
+                            <input type="text" name="last_name" placeholder="Last Name">
+                            <label>Email:</label>
+                            <input type="email" name="email" placeholder="Email address">
+                            <label>Subject:</label>
+                            <input type="text" name="subject">
+                            <label>Message:</label>
+                            <textarea name="message" placeholder="message..."></textarea>
+                            <br>
+                            <input id="abutt" type="submit" value="Send Mail!">
+                        </fieldset>
+                    </form>
+        <div id="content"></div>
         <script src="js/script.js"></script>
     </body>
+<?php
+  if (isset($_REQUEST['email'])) { //if "email" variable is filled out, send email
+  
+  //Set admin email for email to be sent to (use you own MATC email address)
+    $admin_email = "shinklt1@gmatc.matc.edu"; 
+
+  //Set PHP variable equal to information completed on the HTML form
+    $email = $_REQUEST['email']; //Request email that user typed on HTML form
+    $subject = $_REQUEST['subject']; //Request subject that user typed on HTML form
+    $message = $_REQUEST['message']; //Request message that user typed on HTML form
+  //Combine first name and last name, adding a space in between
+    $name = $_REQUEST['first_name'] . " " .  $_REQUEST['last_name']; 
+            
+  //Start building the email body combining multiple values from HTML form    
+    $body  = "From: " . $name . "\n"; 
+    $body .= "Email: " . $email . "\n"; //Continue the email body
+    $body .= "Message: " . $message; //Continue the email body
+  
+  //Create the email headers for the from and CC fields of the email     
+    $headers = "From: " . $name . " <" . $email . "> \r\n"; //Create email "from"
+    $headers .= "CC: " . $name . " <" . $email . ">"; //Send CC to visitor
+    
+  //Actually send the email from the web server using the PHP mail function
+  mail($admin_email, $subject, $body, $headers); 
+    
+  //Display email confirmation response on the screen
+  echo "Thank you for contacting us!"; 
+  }
+  
+  //if "email" variable is not filled out, display an error
+  else  { 
+     echo "There has been an error!";
+        }
+?>
+
 </html>
