@@ -37,7 +37,7 @@ a{
 }
 
 a:hover, button:hover{
-    color:#fd84a9;
+    color:#ffaac4;
     text-decoration: underline;
 }
 
@@ -116,11 +116,16 @@ button{
     line-height: 2;
     left:.5em;
     font-size:1.3em;
-    color:#ff2a6b;
+    color:#ff5f9f;
 }
 
 .overlayContentContainer a:hover{
-    color:#fd84a9;
+    color:#ffaac4;
+}
+
+#linkContainer{
+    width:16em;
+    margin:auto;
 }
 
 #rightContainer{
@@ -160,11 +165,11 @@ button{
 line-height: 2;}
 
 #menuOver a{
-    color:#ff2a6b;
+    color:#ff5f9f;
 }
 
 #menuOver a:hover{
-    color:#fd84a9;
+    color:#ffaac4;
 }
 
 /*content styling*/
@@ -202,7 +207,7 @@ footer{
 form{
     color:white;
     display: flex;
-    margin:2em auto;
+    margin:4em auto 4em auto;
     display:table;
 }
 
@@ -227,13 +232,14 @@ textArea{
 #abutt{
     color:white;
     background-color: black;
-    border:1 px solid white;
+    border:1px solid white;
     border-radius: 2em;
     font-family: "Lato", sans-serif;
 }
 
 #abutt:hover{
-    color:#ff2a6b;
+    color:#ffaac4;
+    border:1px solid #ffaac4;
 }
 
 #abutt:active{
@@ -247,16 +253,18 @@ textArea{
     text-align:center;
 }
 
-   #desktopDirectory{
+#desktopDirectory{
         display:none;
     }
 
+#contactFooter{
+    position:fixed;
+    bottom:0;
+    border-top:1px solid white;
+}
+
 @media screen and (min-width:800px){
     #mobileDirectory{
-        display:none;
-    }
-    
-    #burger{
         display:none;
     }
     

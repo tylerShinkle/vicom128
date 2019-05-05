@@ -23,6 +23,7 @@
                 </button>
                 <!--overlay content-->
                 <div class="overlayContentContainer">
+                    <div id="linkContainer">
                     <a href="html.html">html</a> 
                         <a class = overlayRight href="html.html#ref">>references</a>
                         <a class = overlayRight href="html.html#projects">>projects</a>
@@ -39,6 +40,7 @@
                         <a class = overlayRight href="node.html#ref">>references</a>
                         <a class = overlayRight href="node.html#projects">>projects</a>
                     <a href="contact.html">contact</a>
+                    </div>
                 </div>
             </section>
 

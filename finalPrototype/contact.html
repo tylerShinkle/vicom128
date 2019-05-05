@@ -13,6 +13,7 @@
     </head>
     
     <body>
+        <main>
          <!--overlays on top-->
         <!--Mobile burger menu overlay-->
             <section id="menuOver" class="overlay">
@@ -22,6 +23,7 @@
                 </button>
                 <!--overlay content-->
                 <div class="overlayContentContainer">
+                    <div id="linkContainer">
                     <a href="html.html">html</a> 
                         <a class = overlayRight href="html.html#ref">>references</a>
                         <a class = overlayRight href="html.html#projects">>projects</a>
@@ -38,6 +40,7 @@
                         <a class = overlayRight href="node.html#ref">>references</a>
                         <a class = overlayRight href="node.html#projects">>projects</a>
                     <a href="contact.html">contact</a>
+                    </div>
                 </div>
             </section>
 
@@ -158,6 +161,7 @@
                 <a href="contact.html">contact</a>
             </nav>
         <!-- end desktop directory bar-->
+        <div id="content">
         <form id="contact" action="sendmail.php" method="post">
                         <fieldset>
                             <legend>Contact Us</legend>
@@ -175,7 +179,13 @@
                             <input id="abutt" type="submit" value="Send Mail!">
                     </fieldset>
             </form>
+        </div>
         <div id="content"></div>
+        <footer id="contactFooter">
+            <a href="contact.html">Contact Us</a>
+            <p>&copy;2019</p>
+        </footer>
         <script src="js/script.js"></script>
+        </main>
     </body>
 </html>
