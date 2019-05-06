@@ -258,8 +258,7 @@ textArea{
     }
 
 #contactFooter{
-    position:fixed;
-    bottom:0;
+    position: static;
     border-top:1px solid white;
 }
 

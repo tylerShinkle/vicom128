@@ -14,8 +14,9 @@
     </head>
     
     <body>
-         <!--overlays on top-->
+    <!--overlays on top-->
         <!--Mobile burger menu overlay-->
+        <main>
             <section id="menuOver" class="overlay">
                 <!--exit overlay button-->
                 <button id=menuClose class="close">
@@ -26,24 +27,23 @@
                     <div id="linkContainer">
                     <a href="html.html">html</a> 
                         <a class = overlayRight href="html.html#ref">>references</a>
-                        <a class = overlayRight href="html.html#projects">>projects</a>
+                        <a class = overlayRight href="html.html#htmlProjects">>projects</a>
                     <a href="css.html">css</a>
                         <a class = overlayRight href="css.html#ref">>references</a>
-                        <a class = overlayRight href="css.html#projects">>projects</a>
+                        <a class = overlayRight href="css.html#cssProjects">>projects</a>
                     <a href="js.html">java script</a>
                         <a class = overlayRight href="js.html#ref">>references</a>
-                        <a class = overlayRight href="js.html#projects">>projects</a>
+                        <a class = overlayRight href="js.html#jsProjects">>projects</a>
                     <a href="php.html">php</a>
                         <a class = overlayRight href="php.html#ref">>references</a>
-                        <a class = overlayRight href="php.html#projects">>projects</a>
+                        <a class = overlayRight href="php.html#phpProjects">>projects</a>
                     <a href="node.html">node.js</a>
                         <a class = overlayRight href="node.html#ref">>references</a>
-                        <a class = overlayRight href="node.html#projects">>projects</a>
+                        <a class = overlayRight href="node.html#nodeProjects">>projects</a>
                     <a href="contact.html">contact</a>
                     </div>
                 </div>
             </section>
-
             <!--Mobile language overlay-->
             <section id="langOver" class="overlay">
                 <button id=langClose class="close">
@@ -66,11 +66,11 @@
                 </button>
                 <div class="overlayContentContainer">
                     <p>projects</p>
-                    <a href="html.html#projects">html</a>
-                    <a href="css.html#projects">css</a>
-                    <a href="js.html#projects">java script</a>
-                    <a href="php.html#projects">php</a>
-                    <a href="node.html#projects">node.js</a>
+                    <a href="html.html#htmlProjects">html</a>
+                    <a href="css.html#cssProjects">css</a>
+                    <a href="js.html#jsProjects">java script</a>
+                    <a href="php.html#phpProjects">php</a>
+                    <a href="node.html#nodeProjects">node.js</a>
                 </div>
             </section>
         
@@ -121,41 +121,41 @@
                 </div>
             </nav>
         <!--mobile directory bar done-->
-        <!--desktop directory bar-->
+            <!--desktop directory bar-->
             <nav id="desktopDirectory">
                 <div class=tierContainer>
                     <a  href="html.html" class="desktopDir">html</a>
                     <ul class=tier>
                         <li><a href="html.html#ref">References</a></li>
-                        <li><a href="html.html#projects">Projects</a></li>
+                        <li><a href="html.html#htmlProjects">Projects</a></li>
                     </ul>
                 </div>
                 <div class=tierContainer>
                     <a  href="css.html" class="desktopDir">css</a>
                     <ul class=tier>
                         <li><a href="css.html#ref">References</a></li>
-                        <li><a href="css.html#projects">Projects</a></li>
+                        <li><a href="css.html#cssProjects">Projects</a></li>
                     </ul>
                 </div>
                 <div class=tierContainer>
                     <a  href="js.html" class="desktopDir">java script</a>
                     <ul class=tier>
                         <li><a href="js.html#ref">References</a></li>
-                        <li><a href="js.html#projects">Projects</a></li>
+                        <li><a href="js.html#jsProjects">Projects</a></li>
                     </ul>
                 </div>
                 <div class=tierContainer>
                     <a  href="php.html" class="desktopDir">php</a>
                     <ul class=tier>
                         <li><a href="php.html#ref">References</a></li>
-                        <li><a href="php.html#projects">Projects</a></li>
+                        <li><a href="php.html#phpProjects">Projects</a></li>
                     </ul>
                 </div>
                 <div class=tierContainer>
                     <a  href="node.html" class="desktopDir">node.js</a>
                     <ul class=tier>
                         <li><a href="node.html#ref">References</a></li>
-                        <li><a href="node.html#projects">Projects</a></li>
+                        <li><a href="node.html#nodeProjects">Projects</a></li>
                     </ul>
                 </div>
                 <a href="contact.html">contact</a>
@@ -180,7 +180,12 @@
                         </fieldset>
                     </form>
         <div id="content"></div>
+            <footer id="contactFooter">
+            <a href="contact.html">Contact Us</a>
+            <p>&copy;2019</p>
+        </footer>
         <script src="js/script.js"></script>
+        </main>
     </body>
 <?php
   if (isset($_REQUEST['email'])) { //if "email" variable is filled out, send email

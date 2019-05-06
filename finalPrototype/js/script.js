@@ -35,12 +35,27 @@ function addEars(index) {
 
 function init() {
     "use strict";
-    var i;
+    var i,j,k,links,overlay,toShow;
     //load all buttons into array.
     buttonArray = document.getElementsByTagName('button');
     // for each element of array call addEars on it.
     for (i = 0; i < buttonArray.length; i += 1) {
         addEars(i);
+    }
+    
+    //section links that dont link to a new page need to hide the overlay, and show the content again.
+    overlay=document.getElementsByClassName("overlay");
+    for (i = 0; i<overlay.length; i+=1){
+        links=overlay[i].getElementsByTagName('a');
+        for(j = 0; j<links.length; j++){
+            links[j].addEventListener('click', function(){
+                for(k = 0 ; k<overlay.length; k+=1){
+                    overlay[k].style.display="none";
+                }
+                toShow=document.getElementById("content");
+                toShow.style.display="block";
+            })
+        }
     }
 }
 
