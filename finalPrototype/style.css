@@ -6,28 +6,35 @@ html{
 body{
     font-family: "Lato", sans-serif;
     font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 1px;
+    line-height: 1.6;
+    letter-spacing: 1.25px;
     margin:0;
-    background-color:black;
+    background-color:#191919;
     word-wrap: break-word;
 }
 
 main{
-    max-width:60em;
+    max-width:50em;
     margin:auto;
 }
 /*top 2 bars*/
 nav{
-    background-color: black;
+    background-color: #191919;
     color:white;
     padding:1vmin 0 1vmin 1vmin;
     border-bottom: 1px solid white;
     font-size:1.1em;
+    position: relative;
 }
 
 nav div{
     display: inline-block;
+}
+
+nav a{
+    text-decoration: none;
+    color:#55d66b;
+
 }
 
 /*global tags*/
@@ -37,7 +44,7 @@ a{
 }
 
 a:hover, button:hover{
-    color:#ffaac4;
+    color:#94f7a4;
     text-decoration: underline;
 }
 
@@ -47,7 +54,7 @@ a:active{
 
 button{
     border:none;
-    background-color: black;
+    background-color: #191919;
     color:white;
     font-family: "Lato", sans-serif;
     font-size:1em;
@@ -64,10 +71,15 @@ button{
 #burger{
     display: inline-block;
     float:right;
-    position:relative;
+    position: absolute;
     right:1vmin;
+    height: 100%;
+    top:0;
 }
 
+#burger:hover{
+    color:#94f7a4;
+}
 /*overlay exit*/
 .close{
     font-size:30px;
@@ -91,7 +103,7 @@ button{
     vertical-align: middle;
     text-align: center;
     padding:4vmin ;
-    max-width:60em;
+    max-width:50em;
     margin:0 auto;
 }
 
@@ -116,11 +128,11 @@ button{
     line-height: 2;
     left:.5em;
     font-size:1.3em;
-    color:#ff5f9f;
+    color:#55d66b;
 }
 
 .overlayContentContainer a:hover{
-    color:#ffaac4;
+    color:#94f7a4;
 }
 
 #linkContainer{
@@ -141,14 +153,14 @@ button{
 .overlay{
     width:100%;
     height:100%;
-    background-color: black;
+    background-color: #191919;
     position:absolute;
     z-index:1;
     color:white;
     display:none;
     text-align: center;
     overflow: scroll;
-    max-width: 60em;
+    max-width: 50em;
 }
 
 #menuOver .overlayRight {
@@ -165,17 +177,16 @@ button{
 line-height: 2;}
 
 #menuOver a{
-    color:#ff5f9f;
+    color:#55d66b;
 }
 
 #menuOver a:hover{
-    color:#ffaac4;
+    color:#94f7a4;
 }
 
 /*content styling*/
 .content{
     color:white;
-    background-color: black;
     margin:0 auto;
     border-bottom: 1px solid white;
     padding:0 .5em 1.5em .5em;
@@ -194,14 +205,26 @@ line-height: 2;}
 
 footer{
     width:100%;
-    max-width: 60em;
-    color:white;
-    background-color:black;
+    max-width: 50em;
+    color:#55d66b;
+    background-color:#191919;
     bottom:0;
     line-height: 1em;
-    text-align: center;
+    text-align: left;
     font-size:1em;
     padding: 1em 0em 0em 0em;
+    position: relative;
+}
+
+footer a{
+    color:#55d66b;
+    text-decoration: none;
+    margin-left: 1vmin;
+    font-size:1.1em;
+}
+
+footer p{
+    margin-left:1vmin;
 }
 
 form{
@@ -213,6 +236,10 @@ form{
 
 fieldset{
     display: table;
+}
+
+article a{
+    color:#55d66b;
 }
 
 input{
@@ -231,15 +258,15 @@ textArea{
 
 #abutt{
     color:white;
-    background-color: black;
+    background-color: #191919;
     border:1px solid white;
     border-radius: 2em;
     font-family: "Lato", sans-serif;
 }
 
 #abutt:hover{
-    color:#ffaac4;
-    border:1px solid #ffaac4;
+    color:#94f7a4;
+    border:1px solid #94f7a4;
 }
 
 #abutt:active{
@@ -258,10 +285,110 @@ textArea{
     }
 
 #contactFooter{
-    position: static;
+    position: relative;
     border-top:1px solid white;
 }
 
+.content h2{
+    color:#55d66b;
+}
+
+#mobileDirectory button{
+    color:#55d66b;
+}
+
+#mobileDirectory button:hover{
+    color:#94f7a4;
+}
+
+#socialLinks{
+    position: absolute;
+    right:1vmin;
+    top:1em;
+}
+
+#socialLinks img{
+    height: 1.75em;
+    width:auto;
+    padding-left: .125em;
+}
+
+#socialLinks img:hover, #socialLinks a:hover{
+    opacity: .5;
+    text-decoration: none;
+}
+
+.burgerBar{
+    width:18px;
+    height:3px;
+    background-color:#55d66b;
+    display: block;
+    border-radius:9em;
+}
+
+#b1, #b2{
+    margin-bottom: 3px;
+}
+
+#burger:hover .burgerBar{
+    background-color: #94f7a4;
+}
+
+article img{
+    text-align: center;
+    max-width:100px;
+    height:auto;
+}
+
+figure{
+    margin:1em auto;
+    text-align: center;
+    max-width: 90%;
+}
+
+figcaption{
+    margin-top: 1.5em;
+    display: block;
+    text-align: left;
+}
+
+#groupA{
+    margin:auto;
+    text-align: center;
+}
+
+.optionBlocks{
+    width:90px;
+    height:90px;
+    text-align: center;
+    display: table;
+    background-color: #55d66b;
+    margin:2em;
+    border-radius: .75em;
+}
+
+.optionBlocks p{
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 1.5em;
+}
+
+.optionContainer{
+    display: inline-block;
+}
+
+figure h3{
+    margin-bottom: 1.5em;
+}
+
+figcaption a{
+    color:#55d66b;
+}
+
+figure img{
+    width:200px;
+    height:auto;
+}
 @media screen and (min-width:800px){
     #mobileDirectory{
         display:none;
@@ -287,9 +414,9 @@ textArea{
     .tierContainer:hover .tier{
         display:block;
         position:absolute;
-        background-color: black;
+        background-color: #191919;
         border:1px solid white;
-        top:3.45em;
+        top:1em;
         list-style-type: none;
     }
     

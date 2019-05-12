@@ -36,27 +36,35 @@
                     </p>
                     <ul>
                         <li>href=URL or #ID</li>
+                        <li>
                             <ul>
                                 <li>The href attribute descibes the links destination. When you click on a link , this is where you will go. </li>
                                 <li>Here is an example...</li>
-                                <ul>
-                                    <li>&lt;a href=https://www.google.com/&gt; Google&lt;/a&gt;<br><br>Would evaluate to the next item on this list with the help of CSS.</li>
-                                    <li>
-                                    <a href=https://www.google.com target="_blank">
+                                <li>
+                                    <ul>
+                                        <li>&lt;a href=https://www.google.com/&gt; Google&lt;/a&gt;<br><br>Would evaluate to the next item on this list with the help of CSS.</li>
+                                        <li>
+                                        <a href=https://www.google.com target="_blank">
                                         Google
-                                    </a>
-                                     &nbsp;&lt;-- This is the link made from the anchor tag above.
-                                    </li>
-                                </ul>
+                                        </a>
+                                        &nbsp;&lt;-- This is the link made from the anchor tag above.
+                                        </li>
+                                    </ul>
+                                </li>
                             </ul>
-                                <br>
-                            <li>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul>
+                        <li>
                                 target="_blank" or "_parent" or "_self" or "_top"
-                            </li>
-                                <ul>
-                                    <li>
+                        </li>
+                        <li>
+                            <ul>
+                                <li>
                                     The target attribute describes how the link opens. When target is set to "_blank" it opens the link in a new tab. That would look like this...
-                                    </li>
+                                </li>
+                                <li>
                                     <ul>
                                         <li>
                                             &lt;a href=https://www.google.com/ target="_blank"&gt; Google&lt;/a&gt;
@@ -66,7 +74,9 @@
                                             <a href=https://www.google.com target="_blank"> Google</a><br><br>If you click the link above it will open iin a new tab.
                                         </li>
                                     </ul>
-                                </ul>
+                                </li>
+                            </ul>
+                        </li>
                         <br>
                         <li>
                             For more about anchor tags or links click <a href="https://www.w3schools.com/tags/tag_a.asp" target="_blank">here</a> and read on!
@@ -79,38 +89,48 @@
                     <p>There are 3 different types of lists in HTML...</p>
                     <ol>
                         <li>Unordered Lists</li>
-                            <ul>
-                                <li>Unordered lists use the tags &lt;ul&gt;&lt;/ul&gt; to define themselves and &lt;li&gt;&lt;/li&gt; to define the items on the list. (know as list items) These lists use bullets or other symbols to denote the beginning of a new list item.</li>
-                                <li>Here is an example of an unordered list...</li>
+                            <li>
                                 <ul>
-                                    <li>Item One</li>
-                                    <li>Item Two</li>
-                                    <li>Item Three</li>
+                                    <li>Unordered lists use the tags &lt;ul&gt;&lt;/ul&gt; to define themselves and &lt;li&gt;&lt;/li&gt; to define the items on the list. (know as list items) These lists use bullets or other symbols to denote the beginning of a new list item.</li>
+                                    <li>Here is an example of an unordered list...</li>
+                                    <li>
+                                        <ul>
+                                            <li>Item One</li>
+                                            <li>Item Two</li>
+                                            <li>Item Three</li>
+                                        </ul>
+                                    </li>
+                                    <li>The HTML looks like this...</li>
+                                    <li>
+                                        <ul>
+                                            <li class=code>    
+                                                <code>
+                                                    &lt;ul&gt;<br>
+                                                    &nbsp;&nbsp; &lt;li&gt;Item One&lt;/li&gt;<br>
+                                                    &nbsp;&nbsp; &lt;li&gt;Item Two&lt;/li&gt;<br>
+                                                    &nbsp;&nbsp; &lt;li&gt;Item Three&lt;/li&gt;<br>
+                                                    &lt;/ul&gt;
+                                                </code>
+                                            </li>
+                                        </ul>
+                                    </li>
                                 </ul>
-                                <li>The HTML looks like this...</li>
-                                <ul>
-                                <li class=code>    
-                                <code>
-                                &lt;ul&gt;<br>
-                                     &nbsp;&nbsp; &lt;li&gt;Item One&lt;/li&gt;<br>
-                                     &nbsp;&nbsp; &lt;li&gt;Item Two&lt;/li&gt;<br>
-                                     &nbsp;&nbsp; &lt;li&gt;Item Three&lt;/li&gt;<br>
-                                &lt;/ul&gt;
-                                </code>
-                                </li>
-                                </ul>
-                            </ul>
+                            </li>
                         <!--ordered lists-->
                         <li>Ordered Lists</li>
-                        <ul>
+                        <li>
+                            <ul>
                                 <li>Ordered lists use the tags &lt;ol&gt;&lt;/ol&gt; to define themselves and &lt;li&gt;&lt;/li&gt; to define the items on the list. (know as list items)These lists use numbers by default to signify the beginning of a new list item.</li>
                                 <li>Here is an example of an ordered list...</li>
-                                <ol>
-                                    <li>Item One</li>
-                                    <li>Item Two</li>
-                                    <li>Item Three</li>
-                                </ol>
+                                <li>
+                                    <ol>
+                                        <li>Item One</li>
+                                        <li>Item Two</li>
+                                        <li>Item Three</li>
+                                    </ol>
+                                </li>
                                 <li>The HTML looks like this...</li>
+                                <li>
                                     <ul>
                                         <li class=code>    
                                             <code>
@@ -122,52 +142,64 @@
                                             </code>
                                         </li>
                                     </ul>
+                                </li>
                             </ul>
+                        </li>
                         <li>Description Lists</li>
-                        <ul>
+                        <li>
+                            <ul>
                                 <li>Description lists use the tags &lt;dl&gt;&lt;/dl&gt; to define themselves and &lt;dt&gt;&lt;/dt&gt; to define the terms of the list as well as &lt;dd&gt;&lt;/dd&gt; to define the definitions.</li>
                                 <li>Here is an example of a description list...</li>
-                                <dl>
-                                    <dt>Item One</dt>
-                                    <dd>Description One</dd>
-                                    <dt>Item Two</dt>
-                                    <dd>Description Two</dd>                 <dt>Item Three</dt>
-                                    <dd>Description Three</dd>                
-                                </dl>
+                                <li>
+                                    <dl>
+                                        <dt>Item One</dt>
+                                        <dd>Description One</dd>
+                                        <dt>Item Two</dt>
+                                        <dd>Description Two</dd>                 <dt>Item Three</dt>
+                                        <dd>Description Three</dd>           
+                                    </dl>
+                                </li>
                                 <li>The HTML looks like this...</li>
-                                <ul>
-                                <li class=code>    
-                                <code>
-                                &lt;dl&gt;<br>
-                                     &nbsp;&nbsp; &lt;dt&gt;Item One&lt;/dt&gt;<br>
-                                     &nbsp;&nbsp; &lt;dd&gt;Description One&lt;/dd&gt;<br>
-                                     &nbsp;&nbsp; &lt;dt&gt;Item Two&lt;/dt&gt;<br>
-                                     &nbsp;&nbsp; &lt;dd&gt;Description Two&lt;/dd&gt;<br>
-                                     &nbsp;&nbsp; &lt;dt&gt;Item Three &lt;/dt&gt;<br>
-                                     &nbsp;&nbsp; &lt;dd&gt;Description Three&lt;/dd&gt;<br>
-                                &lt;/dl&gt;
-                                </code>
-                                    </li>
-                                </ul>
+                                <li>
+                                    <ul>
+                                        <li class=code>    
+                                            <code>
+                                                &lt;dl&gt;<br>
+                                                &nbsp;&nbsp; &lt;dt&gt;Item One&lt;/dt&gt;<br>
+                                                &nbsp;&nbsp; &lt;dd&gt;Description One&lt;/dd&gt;<br>
+                                                &nbsp;&nbsp; &lt;dt&gt;Item Two&lt;/dt&gt;<br>
+                                                &nbsp;&nbsp; &lt;dd&gt;Description Two&lt;/dd&gt;<br>
+                                                &nbsp;&nbsp; &lt;dt&gt;Item Three &lt;/dt&gt;<br>
+                                                &nbsp;&nbsp;   &lt;dd&gt;Description        Three&lt;/dd&gt;<br>
+                                                &lt;/dl&gt;
+                                            </code>
+                                        </li>
+                                    </ul>
+                                </li>
                             </ul>
+                        </li>
                     </ol>
                     <h3>You can also change the styles of lists with CSS!</h3>
                     <ul>
                         <li>Different unordered lists styles are achieved like this in the CSS file...<br><br>ul{<br>&nbsp;&nbsp;list-style-type:square;<br>}<br><br>(circle, disc and none are also alternate styles in addition to square.) </li>
                         <li>Here is a unordered list with the square list-style-type...</li>
-                        <ul id=square>
-                            <li>These</li>
-                            <li>Bullets</li>
-                            <li>Are</li>
-                            <li>Sqaure</li>
-                        </ul>
+                        <li>
+                            <ul id=square>
+                                <li>These</li>
+                                <li>Bullets</li>
+                                <li>Are</li>
+                                <li>Sqaure</li>
+                            </ul>
+                        </li>
                         <li>Here is one with circles...</li>
-                        <ul id=circle>
-                            <li>These</li>
-                            <li>Bullets</li>
-                            <li>Are</li>
-                            <li>Sqaure</li>
-                        </ul>
+                        <li>
+                            <ul id=circle>
+                                <li>These</li>
+                                <li>Bullets</li>
+                                <li>Are</li>
+                                <li>Sqaure</li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
                 

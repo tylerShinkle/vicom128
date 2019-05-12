@@ -11,6 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link type="text/css" rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="favicon.png"/>
     </head>
     
     <body>
@@ -26,20 +27,20 @@
                 <div class="overlayContentContainer">
                     <div id="linkContainer">
                     <a href="html.html">html</a> 
-                        <a class = overlayRight href="html.html#ref">>references</a>
                         <a class = overlayRight href="html.html#htmlProjects">>projects</a>
+                        <a class = overlayRight href="html.html#ref">>references</a>
                     <a href="css.html">css</a>
-                        <a class = overlayRight href="css.html#ref">>references</a>
                         <a class = overlayRight href="css.html#cssProjects">>projects</a>
+                    <a class = overlayRight href="css.html#ref">>references</a>
                     <a href="js.html">java script</a>
-                        <a class = overlayRight href="js.html#ref">>references</a>
                         <a class = overlayRight href="js.html#jsProjects">>projects</a>
+                        <a class = overlayRight href="js.html#ref">>references</a>
                     <a href="php.html">php</a>
-                        <a class = overlayRight href="php.html#ref">>references</a>
                         <a class = overlayRight href="php.html#phpProjects">>projects</a>
+                        <a class = overlayRight href="php.html#ref">>references</a>
                     <a href="node.html">node.js</a>
-                        <a class = overlayRight href="node.html#ref">>references</a>
                         <a class = overlayRight href="node.html#nodeProjects">>projects</a>
+                        <a class = overlayRight href="node.html#ref">>references</a>
                     <a href="contact.html">contact</a>
                     </div>
                 </div>
@@ -92,12 +93,14 @@
         <!--mobile title bar-->
             <nav id="mobileTitle">
                 <div id="logo">
-                    <a href="index.html">devpendium</a>
+                    <a href="index.html">&lt;devpendium/&gt;</a>
                 </div>
             <!--access menu overlay on mobile-->
                 <button id="burger"  class="open" value=menuOver>
                 <!--diplay overlay on click-->
-                &#9776;
+                    <span class="burgerBar" id=b1></span>
+                    <span class="burgerBar" id=b2></span>
+                    <span class="burgerBar"></span>
                 </button>
             </nav>
         <!--mobile title bar done-->
@@ -126,36 +129,36 @@
                 <div class=tierContainer>
                     <a  href="html.html" class="desktopDir">html</a>
                     <ul class=tier>
-                        <li><a href="html.html#ref">References</a></li>
                         <li><a href="html.html#htmlProjects">Projects</a></li>
+                        <li><a href="html.html#ref">References</a></li>
                     </ul>
                 </div>
                 <div class=tierContainer>
                     <a  href="css.html" class="desktopDir">css</a>
                     <ul class=tier>
-                        <li><a href="css.html#ref">References</a></li>
                         <li><a href="css.html#cssProjects">Projects</a></li>
+                        <li><a href="css.html#ref">References</a></li>
                     </ul>
                 </div>
                 <div class=tierContainer>
                     <a  href="js.html" class="desktopDir">java script</a>
                     <ul class=tier>
-                        <li><a href="js.html#ref">References</a></li>
                         <li><a href="js.html#jsProjects">Projects</a></li>
+                        <li><a href="js.html#ref">References</a></li>
                     </ul>
                 </div>
                 <div class=tierContainer>
                     <a  href="php.html" class="desktopDir">php</a>
                     <ul class=tier>
-                        <li><a href="php.html#ref">References</a></li>
                         <li><a href="php.html#phpProjects">Projects</a></li>
+                        <li><a href="php.html#ref">References</a></li>
                     </ul>
                 </div>
                 <div class=tierContainer>
                     <a  href="node.html" class="desktopDir">node.js</a>
                     <ul class=tier>
-                        <li><a href="node.html#ref">References</a></li>
                         <li><a href="node.html#nodeProjects">Projects</a></li>
+                        <li><a href="node.html#ref">References</a></li>
                     </ul>
                 </div>
                 <a href="contact.html">contact</a>
@@ -165,20 +168,76 @@
         <div id="content">
             <div id=indexContentA class=content>
                 <article>
-                <h2>Index Header A</h2>
-                This is the content for indexContentA! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. letsTestTheCssPropertyWordWrapItSeemsToBeWorkingYay!
+                    <h2>Welcome to Devpendium!</h2>
+                    Here at Devpendium we hope to teach new web developers all they need to know to get building websites from scratch. We have introduction projects for each language as well as a list of useful references for each language. If you have any questions / concerns you can email us <a href="contact.html">here.</a> Get ready to share your creations with the world!
+                    <h2>Tools we recommend...</h2>
+                    If your first starting off, we recommend downloading and using the following tools... 
+                
                 </article>
+                <figure>
+                    <h3>Atom Editor</h3>
+                    <img id=introImage src="atom.png" alt="atom io logo">
+                    <figcaption>
+                        Atom is a good tool for creating code, it's a very nice text editor with many useful packages too help you code your best! You can download it <a href ="https://atom.io/">here.</a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <h3>Git / Github</h3>
+                    <img src="git.png" alt="git logo">
+                    <figcaption>
+                         Git is a version control system, it helps you keep track of the different versions and changes you make to your projects. For instance if something goes wrong, you can revert back to an earlier version of your project. It also allows you to work with a team as multiple people can work on the same files on their own "branch". It is a very useful and widely used tool in the development world. You can download it <a href="https://git-scm.com/">here.</a>You should also create a github account, this will make things easier. Go <a href="https://github.com/">here</a> to setup an account.
+                    </figcaption>
+                </figure>
             </div>
             <div id=indexContentB class=content>
                 <article>
-                     <h2>Index Header B</h2>
-                This is the content for indexContentB! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. Will this ever overflow, it shouldn't it has no max height! This is the content for indexContentB! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. Will this ever overflow, it shouldn't it has no max height! This is the content for indexContentB! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. Will this ever overflow, it shouldn't it has no max height! This is the content for indexContentB! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. Will this ever overflow, it shouldn't it has no max height!
-                </article>
-            </div>
-            <div id=indexContentC class=content>
-                <article>
-                <h2>Index Header C</h2>
-                This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!!         This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!!         This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!!         This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!!         This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!!         This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!! 
+                     <h2>Learn to Code!</h2>
+                        We offer educational resources for multiple languages. Those languages include...
+                        <br>
+                    <h2>
+                        <a href="html.html">
+                        HTML
+                        </a>
+                    </h2>
+                        <p>
+                            HTML  stands for Hyper Text Markup Language. It creates the structure of web pages and is the basis of all web pages you see. HTML is the first language you should learn if you want to begin building web sites. HTML describes elements with tags, and displays certain tags in certain ways. Everything in the window you see now is described with some sort of HTML tag, from the title in the tab, to the text your reading now. Although the properties of these elements  are altered by CSS, learn more about that next!
+                        </p>
+                    <br>
+                    <h2>
+                        <a href="css.html">
+                        CSS
+                        </a>
+                    </h2>
+                        <p>CSS is how you change the appearance of HTML elements, it stands for Cascading Style Sheets. You can think of HTML as the buildings scaffolding and CSS as the paint, decor and floorplan. You can change the position, color and particular behaviors of HTML elements with CSS. We recommend you begin learning CSS soon after get the basics of HTML down.</p>
+                    <br>
+                    <h2>
+                        <a href="js.html">
+                            Java Script
+                        </a>
+                    </h2>
+                        <p>
+                            Java Script is a scripting language that allows for user interaction and dynamic content. Many buttons and animations are made using Java Script, as well as most custom user content such as loading your name in a page when you login. If HTML is the scaffolding and CSS is the floorplan then you can think of Java Script as the contractors that can change this in real time, depending on the blueprints or instructions they are given. We recommend learning Java Script after you become comfortable with HTML and CSS. Java Script is extremely popular and is what brings the web to life!
+                        </p>
+                    <br>
+                    <h2>
+                        <a href="php.html">
+                        PHP
+                        </a>
+                    </h2>
+                        <p>
+                            PHP stands for Hypertext Preprocessor, although the acronym is kind of weird. PHP is a server side scripting language. PHP allows clients (browsers) to send requests to the server by calling PHP files, and the server will send a response page. PHP allows you to interact with other software elements on the server such as databases and analytic tools. Many websites you visit utilize PHP to enable communication between the client and server. Once your comfortable with HTML, CSS and Java Script you should consider learning a sever side language such as PHP or Node.js. 
+                        </p>
+                    <br>
+                    <h2>
+                        <a href="node.html">
+                        Node.js
+                        </a>
+                    </h2>
+                        <p>
+                            Node.js is another server side scripting language that is essentially Java Script running outside of a browser thanks to Google's V8 Java Script engine. With Node.js you can do most anything you can with PHP but with the convenience of being able to develop both your front end and back end in the same language, Java Script. With server side languages you can write to files and databases on the server as well as dynamically structuring web pages and much more. Databases are becoming integral in modern day web development, we highly recommend you learn a server side language even if you plan solely on being a front end developer.
+                        </p>
+                    <br>
+
                 </article>
             </div>
         </div>
@@ -186,6 +245,20 @@
         <footer>
             <a href="contact.html">Contact Us</a>
             <p>&copy;2019</p>
+            <div id="socialLinks">
+                <a href="https://www.facebook.com/">
+                    <img src="fbLogo.png"/ alt="facebook logo">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="instaLogo.png" alt="instagram logo"/>
+                </a>
+                <a href="https://twitter.com/">
+                    <img src="twitterLogo.png" alt="twitter logo"/>
+                </a>
+                <a href="https://www.youtube.com/">
+                    <img src="youtubeLogo.png" alt="youtube logo"/>
+                </a>
+            </div>
         </footer>
         </main>
         <script src="js/script.js"></script>

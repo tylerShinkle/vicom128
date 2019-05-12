@@ -3,7 +3,7 @@
 
      <head>
         <!-- add favicon-->
-        <title>devpendium</title>
+        <title>devpendium | Message Received</title>
         <meta charset="UTF-8">
         <meta name="description" content="devpendium web development tutorials.">
         <meta name="keywords" content="HTML, CSS, Javascript, php, node, tutorials, free">
@@ -26,20 +26,20 @@
                 <div class="overlayContentContainer">
                     <div id="linkContainer">
                     <a href="html.html">html</a> 
-                        <a class = overlayRight href="html.html#ref">>references</a>
                         <a class = overlayRight href="html.html#htmlProjects">>projects</a>
+                        <a class = overlayRight href="html.html#ref">>references</a>
                     <a href="css.html">css</a>
-                        <a class = overlayRight href="css.html#ref">>references</a>
                         <a class = overlayRight href="css.html#cssProjects">>projects</a>
+                    <a class = overlayRight href="css.html#ref">>references</a>
                     <a href="js.html">java script</a>
-                        <a class = overlayRight href="js.html#ref">>references</a>
                         <a class = overlayRight href="js.html#jsProjects">>projects</a>
+                        <a class = overlayRight href="js.html#ref">>references</a>
                     <a href="php.html">php</a>
-                        <a class = overlayRight href="php.html#ref">>references</a>
                         <a class = overlayRight href="php.html#phpProjects">>projects</a>
+                        <a class = overlayRight href="php.html#ref">>references</a>
                     <a href="node.html">node.js</a>
-                        <a class = overlayRight href="node.html#ref">>references</a>
                         <a class = overlayRight href="node.html#nodeProjects">>projects</a>
+                        <a class = overlayRight href="node.html#ref">>references</a>
                     <a href="contact.html">contact</a>
                     </div>
                 </div>
@@ -92,12 +92,14 @@
         <!--mobile title bar-->
             <nav id="mobileTitle">
                 <div id="logo">
-                    <a href="index.html">devpendium</a>
+                    <a href="index.html">&lt;devpendium/&gt; </a>
                 </div>
             <!--access menu overlay on mobile-->
                 <button id="burger"  class="open" value=menuOver>
                 <!--diplay overlay on click-->
-                &#9776;
+                    <span class="burgerBar" id=b1></span>
+                    <span class="burgerBar" id=b2></span>
+                    <span class="burgerBar"></span>
                 </button>
             </nav>
         <!--mobile title bar done-->
@@ -126,36 +128,36 @@
                 <div class=tierContainer>
                     <a  href="html.html" class="desktopDir">html</a>
                     <ul class=tier>
-                        <li><a href="html.html#ref">References</a></li>
                         <li><a href="html.html#htmlProjects">Projects</a></li>
+                        <li><a href="html.html#ref">References</a></li>
                     </ul>
                 </div>
                 <div class=tierContainer>
                     <a  href="css.html" class="desktopDir">css</a>
                     <ul class=tier>
-                        <li><a href="css.html#ref">References</a></li>
                         <li><a href="css.html#cssProjects">Projects</a></li>
+                        <li><a href="css.html#ref">References</a></li>
                     </ul>
                 </div>
                 <div class=tierContainer>
                     <a  href="js.html" class="desktopDir">java script</a>
                     <ul class=tier>
-                        <li><a href="js.html#ref">References</a></li>
                         <li><a href="js.html#jsProjects">Projects</a></li>
+                        <li><a href="js.html#ref">References</a></li>
                     </ul>
                 </div>
                 <div class=tierContainer>
                     <a  href="php.html" class="desktopDir">php</a>
                     <ul class=tier>
-                        <li><a href="php.html#ref">References</a></li>
                         <li><a href="php.html#phpProjects">Projects</a></li>
+                        <li><a href="php.html#ref">References</a></li>
                     </ul>
                 </div>
                 <div class=tierContainer>
                     <a  href="node.html" class="desktopDir">node.js</a>
                     <ul class=tier>
-                        <li><a href="node.html#ref">References</a></li>
                         <li><a href="node.html#nodeProjects">Projects</a></li>
+                        <li><a href="node.html#ref">References</a></li>
                     </ul>
                 </div>
                 <a href="contact.html">contact</a>
@@ -180,9 +182,23 @@
                         </fieldset>
                     </form>
         <div id="content"></div>
-            <footer id="contactFooter">
+        <footer id="contactFooter">
             <a href="contact.html">Contact Us</a>
             <p>&copy;2019</p>
+            <div id="socialLinks">
+                <a href="https://www.facebook.com/">
+                    <img src="fbLogo.png"/ alt="facebook logo">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="instaLogo.png" alt="instagram logo"/>
+                </a>
+                <a href="https://twitter.com/">
+                    <img src="twitterLogo.png" alt="twitter logo"/>
+                </a>
+                <a href="https://www.youtube.com/">
+                    <img src="youtubeLogo.png" alt="youtube logo"/>
+                </a>
+            </div>
         </footer>
         <script src="js/script.js"></script>
         </main>

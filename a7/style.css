@@ -15,6 +15,15 @@ header{
     width: 100%;
 }
 
+li{
+    list-style-type: none;
+}
+
+ul li ul:first{
+    list-style-type: none;
+}
+
+
 nav{
     text-align: center;
     background-color: black;
@@ -38,10 +47,10 @@ nav li a:active{
 }
 
 section div{
-    width:80%;
-    margin: 2em auto;
+    width:89%;
+    margin: .125em auto;
     border: 5px solid #30e0d2;
-    padding:2em 1em 2em 1em;
+    padding:2em .5em 2em .5em;
     overflow: auto;
     box-shadow: 5px 5px black;
 }
@@ -56,15 +65,15 @@ section div p{
 }
 
 section div ul, section div ol, section div dl{
-    margin: 1em 2em;
+    margin: 1em .125em;
 }
 
 section div ul li, section div ol li, section div dl dd{
-    margin: 1em 2em;
+    margin: 1em .125em;
 }
 
 section div ul ul{
-    margin-left: 5%;
+    margin-left: .25em;
     margin-top: 1em;
 }
 
