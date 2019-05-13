@@ -168,7 +168,7 @@
                 <article>
                 <h2>CSS Introduction</h2>
                 <p>
-                    CSS stands for cascading style sheets. You use css files to alter the appearance of HTML files. you can change the size, position, colors and fonts of your web page with the help of CSS. CSS files take the form of selector{property:value;}. A selector can be a tag such as p, an id (prefaced with #) such as #id or a class (prefaced with .) such as .class. After the selector there is a set of curly braces. Within the curly braces you put a property, then a semi-colon and then the properties value. Each  property statement should end in a semi-colon, selectors can have many  property statments. See Project #1 below to get started!    
+                    CSS stands for cascading style sheets. You use css files to alter the appearance of HTML files. you can change the size, position, colors and fonts of your web page with the help of CSS. CSS files take the form of selector{property:value;}. A selector can be a element such as p, an id (prefaced with #) such as #id or a class (prefaced with .) such as .class. After the selector there is a set of curly braces. Within the curly braces you put a property, then a semi-colon and then the properties value. Each  property statement should end in a semi-colon, selectors can have many  property statments. See Project #1 below to get started!    
                 </p>
                 </article>
             </div>
@@ -176,7 +176,7 @@
                 <article>
                     <h2>CSS Projects</h2>
                     <h3>Project #1 - CSS Selectors</h3> 
-                    <p>In this project we will work with three types of selectors, a tag name , an id and a class. We will be working with the following HTML document...<br><br>
+                    <p>In this project we will work with three types of selectors, a element name , an id and a class. We will be working with the following HTML document...<br><br>
                         <code>
                             &lt;!DOCTYPE html&gt;<br>
                             &lt;html lang="en"&gt;<br>
@@ -200,17 +200,17 @@
                         </code>
                     </p>
                     
-                    <p>First off, notice the link tag in the head of the HTML document. This is how you link your CSS file to your HTML file. The value of the href property should be replaced by the path to your desired CSS file.</p>
-                    <p>Now we will work with the tag selector. We will target the paragraph tag like so...<br><br>
+                    <p>First off, notice the link element in the head of the HTML document. This is how you link your CSS file to your HTML file. The value of the href property should be replaced by the path to your desired CSS file.</p>
+                    <p>Now we will work with the element selector. We will target the paragraph element like so...<br><br>
                     <code>
                         p{<br>
                             &emsp;font-family:arial, verdana;<br>
                         }    
                     </code>
                     </p>
-                    <p>This will affect all paragraph tags, their fonts will be changed to arial, unless that font is unavailabe for some reason. Then it will be changed to verdana as a backup. The font-family property can have many fonts seperated by commas. The fonts listed first are prioritized and will be used if possible.</p>
+                    <p>This will affect all paragraph elements, their fonts will be changed to arial, unless that font is unavailabe for some reason. Then it will be changed to verdana as a backup. The font-family property can have many fonts seperated by commas. The fonts listed first are prioritized and will be used if possible.</p>
                     <p>
-                        Next we will work with an id selector, id selectors always begin with a '#'. The id must match the id given to an elements id attribute. For instance in the HTML document above the h1 tag has an id attribute with the value 'colorMeRed'. We would change properties of this element like so...<br><br>
+                        Next we will work with an id selector, id selectors always begin with a '#'. The id must match the id given to an elements id attribute. For instance in the HTML document above the h1 element has an id attribute with the value 'colorMeRed'. We would change properties of this element like so...<br><br>
                         *note: an id can only be used for one element, overlapping id's are not good. You can give every element an id if you want, but their values should be different. If you want to affect more than one element use a class instead of an id.<br><br>
                         <code>
                             #colorMeRed{<br>
@@ -221,22 +221,40 @@
                     <p>This will change the color the words "Hello World!" to red. You can also refer to a color in other ways, for instance the hex code for red is #ff0000. More on that later, right now we'll just focus on selectors. </p>
                     
                     <p>Now we will talk about class selectors...</p>
-                    <p>The last two paragraph tags both share the class 'underlineMe', we can change both of them with the same selector, like this...<br><br>
+                    <p>The last two paragraph elements both share the class 'underlineMe', we can change both of them with the same selector, like this...<br><br>
                         <code>
                             .underlineMe{<br>
                                 &emsp;text-decoration:underline;<br>
                             }
                         </code>
                     </p>
-                    <p>This will underline the last two paragraphs. Note how the first paragraph is not underlined as it has no class attribute. Classes and id's override tag selectors as well. And id's override classes. The more specific selector will always take precedence.</p>
+                    <p>This will underline the last two paragraphs. Note how the first paragraph is not underlined as it has no class attribute. Classes and id's override element selectors as well. And id's override classes. The more specific selector will always take precedence.</p>
                     <p>Stay tuned for more projects to come...</p>
                 </article>
             </div>
             <div id="cssRef" class=content>
                 <div id="ref"></div>
                 <article>
-                <h2>CSS References</h2>
-                This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!!         This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!!         This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!!         This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!!         This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!!         This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!! 
+                    <h2>CSS References</h2>
+                    <h3>Selectors</h3>
+                    <p>Selectors are how you reference the elements you want to apply style rules to. There are also layered or nested selectors, that allow you to specify an element of one type that is within another type of element, or the first-child of an element. More on that later, first we will focus on the basics.</p>
+                    <h4>&emsp;element{}</h4>
+                    <p>
+                    &emsp;&emsp;You can reference any element by it's name, the name is just whatever is inside the angle brackets. This will select all elements of the specified type.
+                    </p>
+                    <h4>&emsp;element, element{}</h4>
+                    <p>&emsp;&emsp;This selects both elements and applies the rules to both of them, this helps save time and space as well as improve readability.</p>
+                    <h4>&emsp;element element{}</h4>
+                    <p>&emsp;&emsp;This selects all of elements of the second type that are within elements of the first type. </p>
+                    <h4>&emsp;element>element</h4>
+                    <p>&emsp;&emsp;This selects all elements of the second type where the parent is an element of the first type. An element is the parent of another element when it is directly outside (surrounding) it's child. In other words, parent elements are directly outside their child elements, with no other elements inbetween.</p>
+                    <h4>&emsp;#id{}</h4>
+                    <p>&emsp;&emsp;You can select an elemnent by its id, always prefix the id name with '#'. Remember only one element per id.</p>
+                    <h4>&emsp;.class{}</h4>
+                    <p>&emsp;&emsp;You can select a class by prefixing the class name with a period. Classes can contain more than one element and are useful for styling more than one item at a time. </p>
+                    <h4>&emsp;*{}</h4>
+                    <p>&emsp;&emsp;You can select all elements by using the star selector.</p>
+                    <p>**more CSS references coming soon!</p>
                 </article>
             </div>
         </div>
