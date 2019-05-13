@@ -27,6 +27,14 @@ nav{
     position: relative;
 }
 
+h3{
+color:#55b66d;
+}
+
+h4{
+    color:#55b66d;
+}
+
 nav div{
     display: inline-block;
 }

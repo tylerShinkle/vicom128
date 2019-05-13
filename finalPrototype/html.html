@@ -203,23 +203,93 @@
                     Head tags contain metadata, or data about data. It contains the title, meta tags for SEO, links to style sheets, character sets and more. Notice how all HTML elements inside the HTML tag will inherit the lang attribute of "en" which stands for english. Now all elements will be specified to be in the language of english.
                     </p>
                     <p>Inside the head tags we are going to put a set of title tags. The title is displayed on browsers tabs. This tag should read...<br><br>
-                    <code>&lt;title&gt;Hello World!&lt;/title&gt;</code>
+                    <code>&lt;title&gt;<br>&emsp;Hello World!<br>&lt;/title&gt;</code>
                     <br><br>
                         Our title is "Hello World!"
                     </p>
                     <p>Next, under the closing head tag and above the closing html tag put a set of body tags...
-                    <br><br>
+                    </p>
+                    <br>
                         <code>
                             &lt;body&gt;&lt;/body&gt;
                         </code>
+                    <br><br>
+                    <p>Body tags hold all of the windows content, anything in the main window of the browser will be within the body tags.</p>
+                    <p>Next we will add an h1 tag, h1 stands for heading one. There are six headings from h1-h6 with h1 being the biggest and h6 being the smallest. Headings are useful for article or page titles, Any important section you want to signify with text a heading is useful for. 
                     </p>
+                    <br>
+                    <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+                    <p>That's it, your html page named index.html should look as follows...</p>
+                    <br>
+                    <code>
+                        &lt;!DOCTYPE html&gt;<br>
+                        &lt;html lang="en"&gt;<br>
+                        &emsp;&lt;head&gt;<br>
+                        &emsp;&emsp;&lt;title&gt;<br>&emsp;&emsp;&emsp;Hello World!<br>&emsp;&emsp;&lt;/title&gt;<br>
+                        &emsp;&lt;/head&gt;<br>
+                        &emsp;&lt;body&gt;<br>
+                        &emsp;&emsp;&lt;h1&gt;<br>&emsp;&emsp;&emsp;Hello World!<br>&emsp;&emsp;&lt;/h1&gt;<br>
+                        &emsp;&lt;/body&gt;<br>
+                        &lt;/html&gt;
+                    </code>
+                    <p>Now you should be able to double click on your index.html file and your 'Hello World!' web page should appear in your default browser! Congratulations!</p>
                 </article>
             </div>
             <div id=htmlRef class=content>
                 <div id="ref"></div>
                 <article>
                 <h2>HTML References</h2>
-                This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!!         This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!!         This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!!         This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!!         This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!!         This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!! 
+                    <h3>Global Attributes</h3>
+                    <p>Global attributes can be added to any HTML element other than the doctype declaration. They are as follows...</p>
+                    <h4>&emsp;accesskey</h4>
+                    <p>&emsp;&emsp;specifies a shortcut key to focus on an element.</p>
+                    <h4>&emsp;class</h4>
+                    <p>&emsp;&emsp;specifies one or more class names for an element.</p>
+                    <h4>&emsp;contenteditable</h4>
+                    <p>&emsp;&emsp;specifies whether you can edit the content of an element or not.</p>
+                    <h4>&emsp;dir</h4>
+                    <p>&emsp;&emsp;specifies the text direction of an element.</p>
+                    <h4>&emsp;draggable</h4>
+                    <p>&emsp;&emsp;specifies whether an element is draggable or not.</p>
+                    <h4>&emsp;dropzone</h4>
+                    <p>&emsp;&emsp;specifies whether the dragged data is copied, moved or linked, when dropped.</p>
+                    <h4>&emsp;hidden</h4>
+                    <p>&emsp;&emsp;specifies that an element is not relevant.</p>
+                    <h4>&emsp;id</h4>
+                    <p>&emsp;&emsp;specifies a unique id for an element.</p>
+                    <h4>&emsp;lang</h4>
+                    <p>&emsp;&emsp;specifies the language of the element's content.</p>
+                    <h4>&emsp;spellcheck</h4>
+                    <p>&emsp;&emsp;specifies whether the element is to have its spelling and grammar checked or not.</p>
+                    <h4>&emsp;style</h4>
+                    <p>&emsp;&emsp;specifies an elements inline CSS style.</p>
+                    <h4>&emsp;tabindex</h4>
+                    <p>&emsp;&emsp;specifies the tabbing order of an element.</p>
+                    <h4>&emsp;title</h4>
+                    <p>&emsp;&emsp;specifies extra information about an element.</p>
+                    <h4>&emsp;translate</h4>
+                    <p>&emsp;&emsp;specifies whether the content of an element should be translated or not.</p>
+                    <h3>Tags and Their Attributes</h3>
+                    <p>*note all tags have access to global attributes other than the doctype declaration.</p>
+                    <h3>&lt;!DOCTYPE html&gt;</h3>
+                    <p>This is known as the doctype declaration and lets the browser know what kind of file it is dealing with. It should be included at the top of all html pages.</p>
+                    <h4>&lt;!DOCTYPE html&gt; Attributes</h4>
+                    <P>&emsp;There are no attributes usually associated with the doctype declaration.</P>
+                    <h3>&lt;html&gt;</h3>
+                    <p>The html tag contains all html elements other than the doctype declaration. You can think of the html tags as the container for all other html elements.</p>
+                    <h3>&lt;html&gt; Attributes</h3>
+                    <h4>&emsp;xmlns</h4>
+                    <p>&emsp;&emsp;Specifies XML namespace if needed.</p>
+                    <h3>&lt;head&gt;</h3>
+                    <p>The head tag contains many important things, such as meta data, links to partner files, the title to your site, viewport specification and much more. We'll learn more about these other tags later.</p>
+                    <h3>&lt;head&gt; Attributes</h3>
+                    <p>&emsp;HTML5 does not support any attributes for the head tag other than the global attributes.</p>
+                    <h3>&lt;body&gt;</h3>
+                    <p>The body tags contain all elements intended to appear in the main browser window. Think of it as a container for all of your visible content.</p>
+                    <h3>&lt;body&gt; Attributes</h3>
+                    <p>&emsp;HTML5 does not support any attributes for the body tag other than the global attributes.</p>
+                    <br>
+                    <p>**more HTML references coming soon!</p>
                 </article>
             </div>
         </div>
