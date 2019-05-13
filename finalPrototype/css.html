@@ -167,13 +167,69 @@
             <div id=cssIntro class=content>
                 <article>
                 <h2>CSS Introduction</h2>
-                This is the content for indexContentA! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. letsTestTheCssPropertyWordWrapItSeemsToBeWorkingYay!
+                <p>
+                    CSS stands for cascading style sheets. You use css files to alter the appearance of HTML files. you can change the size, position, colors and fonts of your web page with the help of CSS. CSS files take the form of selector{property:value;}. A selector can be a tag such as p, an id (prefaced with #) such as #id or a class (prefaced with .) such as .class. After the selector there is a set of curly braces. Within the curly braces you put a property, then a semi-colon and then the properties value. Each  property statement should end in a semi-colon, selectors can have many  property statments. See Project #1 below to get started!    
+                </p>
                 </article>
             </div>
             <div id=cssProjects class=content>
                 <article>
-                     <h2>CSS Projects</h2>
-                This is the content for indexContentB! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. Will this ever overflow, it shouldn't it has no max height! This is the content for indexContentB! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. Will this ever overflow, it shouldn't it has no max height! This is the content for indexContentB! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. Will this ever overflow, it shouldn't it has no max height! This is the content for indexContentB! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. Will this ever overflow, it shouldn't it has no max height!
+                    <h2>CSS Projects</h2>
+                    <h3>Project #1 - CSS Selectors</h3> 
+                    <p>In this project we will work with three types of selectors, a tag name , an id and a class. We will be working with the following HTML document...<br><br>
+                        <code>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="en"&gt;<br>
+                            &emsp;&lt;head&gt;<br>
+                            &emsp;&emsp;&lt;title&gt;<br>&emsp;&emsp;&emsp;Hello World!<br>&emsp;&emsp;&lt;/title&gt;<br>
+                            &emsp;&emsp;&lt;link rel="stylesheet" type="text/css" href="style.css"&gt;<br>
+                            &emsp;&lt;/head&gt;<br>
+                            &emsp;&lt;body&gt;<br>
+                            &emsp;&emsp;&lt;h1 id="colorMeRed"&gt;<br>&emsp;&emsp;&emsp;Hello World!    <br>&emsp;&emsp;&lt;/h1&gt;<br>
+                            &emsp;&emsp;&lt;p&gt;<br>
+                            &emsp;&emsp;&emsp;My font is changed!<br>
+                            &emsp;&emsp;&lt;/p&gt;<br>
+                            &emsp;&emsp;&lt;p class="underlineMe"&gt;<br>
+                            &emsp;&emsp;&emsp;I'm underlined!<br>
+                            &emsp;&emsp;&lt;/p&gt;<br>
+                            &emsp;&emsp;&lt;p class="underlineMe"&gt;<br>
+                            &emsp;&emsp;&emsp;So am I! But the first paragraph is not!<br>
+                            &emsp;&emsp;&lt;/p&gt;<br>
+                            &emsp;&lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </code>
+                    </p>
+                    
+                    <p>First off, notice the link tag in the head of the HTML document. This is how you link your CSS file to your HTML file. The value of the href property should be replaced by the path to your desired CSS file.</p>
+                    <p>Now we will work with the tag selector. We will target the paragraph tag like so...<br><br>
+                    <code>
+                        p{<br>
+                            &emsp;font-family:arial, verdana;<br>
+                        }    
+                    </code>
+                    </p>
+                    <p>This will affect all paragraph tags, their fonts will be changed to arial, unless that font is unavailabe for some reason. Then it will be changed to verdana as a backup. The font-family property can have many fonts seperated by commas. The fonts listed first are prioritized and will be used if possible.</p>
+                    <p>
+                        Next we will work with an id selector, id selectors always begin with a '#'. The id must match the id given to an elements id attribute. For instance in the HTML document above the h1 tag has an id attribute with the value 'colorMeRed'. We would change properties of this element like so...<br><br>
+                        *note: an id can only be used for one element, overlapping id's are not good. You can give every element an id if you want, but their values should be different. If you want to affect more than one element use a class instead of an id.<br><br>
+                        <code>
+                            #colorMeRed{<br>
+                            &emsp;color:red;<br>
+                            }
+                        </code>
+                    </p>
+                    <p>This will change the color the words "Hello World!" to red. You can also refer to a color in other ways, for instance the hex code for red is #ff0000. More on that later, right now we'll just focus on selectors. </p>
+                    
+                    <p>Now we will talk about class selectors...</p>
+                    <p>The last two paragraph tags both share the class 'underlineMe', we can change both of them with the same selector, like this...<br><br>
+                        <code>
+                            .underlineMe{<br>
+                                &emsp;text-decoration:underline;<br>
+                            }
+                        </code>
+                    </p>
+                    <p>This will underline the last two paragraphs. Note how the first paragraph is not underlined as it has no class attribute. Classes and id's override tag selectors as well. And id's override classes. The more specific selector will always take precedence.</p>
+                    <p>Stay tuned for more projects to come...</p>
                 </article>
             </div>
             <div id="cssRef" class=content>

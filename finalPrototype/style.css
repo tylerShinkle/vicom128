@@ -397,6 +397,10 @@ figure img{
     width:200px;
     height:auto;
 }
+
+code{
+    word-wrap: break-word;
+}
 @media screen and (min-width:800px){
     #mobileDirectory{
         display:none;
