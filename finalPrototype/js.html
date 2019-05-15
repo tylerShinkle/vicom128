@@ -166,21 +166,77 @@
         <div id="content">
             <div id=jsIntro class=content>
                 <article>
-                <h2>Java Script Introduction</h2>
-                This is the content for indexContentA! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. letsTestTheCssPropertyWordWrapItSeemsToBeWorkingYay!
+                <h2>JavaScript Introduction</h2>
+                    JavaScript  is a client side scripting language. It is associated with a HTML page and can manipulate the elements within the HTML page. There are also events in Java Script that allow users to interact with the page. Java Script enables users to interact with the web page and change it. Developers can also create dynamic content with Java Script that changes in different circumstances. There is a lot you can do with Java Script!
                 </article>
             </div>
             <div id=jsProjects class=content>
                 <article>
-                     <h2>Java Script Projects</h2>
-                This is the content for indexContentB! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. Will this ever overflow, it shouldn't it has no max height! This is the content for indexContentB! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. Will this ever overflow, it shouldn't it has no max height! This is the content for indexContentB! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. Will this ever overflow, it shouldn't it has no max height! This is the content for indexContentB! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. Will this ever overflow, it shouldn't it has no max height!
+                    <h2>Java Script Projects</h2>
+                    <h3>Project #1 - Variables and the DOM</h3>
+                    <p>First, before you can use Java Script you have to link your HTML document to it. Do that by placing the following script tag at the very bottom of the HTML body.</p>
+                    <p><code>&lt;script src="scripts.js"&gt;&lt;/script&gt;</code></p>
+                    <p>*note: replace the value of the src attribute with the path / name of your js file. Java Script files need to have the js extension.</p>
+                    <p>To create a variable in Java Script you use the keyword <code>var</code> followed by whatever name you would like to give the variable provided they don't contain spaces, begin with a letter, underscore or dollar sign and contain no characters other than letters, numbers, underscors or dollar signs. Keep in mind that variables are case sensitive as well. Below we will declare a variable x and set it's value to 5.
+                    </p>
+                    <p>
+                        <code>
+                            var x = 5;
+                        </code>
+                    </p>
+                    
+                    <p>Now we have a variable known as x and can do what we want with it just by referring to it by it's name. Keep in mind you should always use semicolons at the end of a Java Script statement.</p>
+                    <p>
+                        Next we will reference the DOM. DOM stands for Document Object Model, which is a programming interface for HTML and XML. With the DOM programs can interact with and change HTML or XML files. For instance, if there were an element with the id #colorMeBlue we could change the color using Java Script like this...
+                    </p>
+                    <p><code>
+                        var x = document.getElementById("colorMeBlue");<br>
+                        x.style.color = "blue";
+                        </code></p>
+                    
+                    <p>You can do all sorts of stuff with HTML and Java Script, new lessons are coming soon!</p>
                 </article>
             </div>
             <div id=jsRef class=content>
                 <div id="ref"></div>
                 <article>
                 <h2>Java Script References</h2>
-                This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!!         This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!!         This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!!         This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!!         This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!!         This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!! 
+                <h3>Important Keywords</h3>
+                    <p>Keywords cannot be used as variable names, function names or anything else. Java Script reserves these words for special purposes.
+                    </p>
+                    <h4>&emsp;var</h4>
+                    <p>
+                        &emsp;&emsp;var is a keyword used to declare variables.
+                    </p>
+                    <h4>&emsp;new</h4>
+                    <p>
+                        &emsp;&emsp;new is used by Java Script to create new instances of objects.
+                    </p>
+                    <h4>&emsp;return</h4>
+                    <p>
+                        &emsp;&emsp;The return keyowrd stops a function and returns a value from that function. If no return value is specified it returns undefined.
+                    </p>
+                    <h4>&emsp;if</h4>
+                    <p>
+                        &emsp;&emsp;The if keyword in Java Script is a conditional statement. If a certain condition is true then a block of code will be executed. Often paired with else (see below).
+                    </p>
+                    <h4>&emsp;else</h4>
+                    <p>
+                        &emsp;&emsp;The else keyword follow the code block of an if statement, if the condition is false the code block associated with else will be executed instead.
+                    </p>
+                    <h4>&emsp;for</h4>
+                    <p>
+                        &emsp;&emsp;The for keyword creates a loop with depending upon three statements. The initialization of a counter, a condition and an expression modifying the counter. 
+                    </p>
+                    <h4>&emsp;do</h4>
+                    <p>
+                        &emsp;&emsp; The do keyword is used to create a loop similar to that of a for loop, except that the code block is guaranteed to execute at least once because the condition is not evaluated until after the the code block is executed. Learn more about these in a future lesson...
+                    </p>
+                    <h4>&emsp;while</h4>
+                    <p>
+                        &emsp;&emsp;while is used in conjunction with do to form a do while loop. While is followed by a condition at the end of the do code block. The do code block will execute at least once and continue to execute until the while condition is false.
+                    </p>
+                    <p>**more references coming soon!</p>
                 </article>
             </div>
         </div>
