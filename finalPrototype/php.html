@@ -167,20 +167,83 @@
             <div id=phpIntro class=content>
                 <article>
                 <h2>PHP Introduction</h2>
-                This is the content for indexContentA! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. letsTestTheCssPropertyWordWrapItSeemsToBeWorkingYay!
+                    PHP stands for Hypertext Preprocessor (although the acronym does not line up.) PHP is a server side scripting language. With PHP clients can interact with servers and the servers in turn can interact with them in a dynamic, specific sense. For example , with PHP users can upload photos or other files, add data to a data base and much more. PHP files can contain text, HTML, CSS, Java Script and of course PHP code. All PHP files end with a '.php' extension. Many popular sites use PHP such as Facebook, Wikipedia, Baidu, Yahoo! and Flickr. Learn more about PHP below.
                 </article>
             </div>
             <div id=phpProjects class=content>
                 <article>
-                     <h2>PHP Projects</h2>
-                This is the content for indexContentB! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. Will this ever overflow, it shouldn't it has no max height! This is the content for indexContentB! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. Will this ever overflow, it shouldn't it has no max height! This is the content for indexContentB! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. Will this ever overflow, it shouldn't it has no max height! This is the content for indexContentB! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. Will this ever overflow, it shouldn't it has no max height!
+                    <h2>PHP Projects</h2>
+                    <h3>Project #1 - Syntax, Variables and Echo </h3>
+                    <p>To start off we will create a very simple PHP page. In order for it to work correctly you will need to do one of the following as you cannot just run PHP in a browser as you do HTML.</p>
+                    <p>Enough about that, lets write some code...</p>
+                    <p>&emsp;- Upload or FTP your file to a web server with PHP support.</p>
+                    <p>&emsp;- Install a web server on your own computer and then install PHP on the server.</p>
+                    <p>*More on why PHP does not just run in a browser...</p>
+                    <p>&emsp;PHP does not run in browsers, it is executed on servers. What happens is a browser asks a server to return an HTML page, if a PHP tag is detected the PHP environment or system parses the PHP tag. Once PHP parses the PHP tags it renders or preprocesses the new HTML page accordingly. Once it is ready it sends the pre processed page to the client. PHP more or less produces HTML, it is not renderable by browsers itself. The PHP code requires the PHP interpreter which runs on servers</p>
+                    <p>First thing is first, PHP code goes in PHP tags like this...<br><br><code>&lt;?php<br>//code here<br>?&gt;</code></p>
+                    <p>
+                    Now to declare a variable in PHP you use the dollar sign or '$'. We will create a string called <code>$hello</code> and set it to the message we want to display, like this...<br><br>
+                    <code>
+                        &lt;?php<br>
+                        &emsp;$hello = "Hello World";
+                        <br>?&gt;
+                    </code>
+                    </p>
+                    <p>Now to print this variable to the page you will use the <code>echo</code> keyword. Now our first PHP tag will be done and it will look like this...</p>
+                    <code>
+                        &lt;?php<br>
+                        &emsp;$hello = "Hello World";
+                        <br>&emsp;echo $hello;
+                        <br>?&gt;
+                    </code>
+                    <p>**note: In order for a browser to interpret this it needs to be within HTML tags like this...</p>
+                    <br>
+                    &lt;!DOCTYPE html&gt;<br>
+                    &lt;html&gt;<br>
+                    &lt;body&gt;<br>
+                        &emsp;&lt;?php<br>
+                        &emsp;&emsp;$hello = "Hello World";
+                        <br>&emsp;&emsp;echo $hello;
+                        <br>&emsp;?&gt;<br>
+                    &lt;/body&gt;<br>
+                    &lt;/html&gt;
+                    <p>You can now host this and see how it works! Then maybe experiment a bit.</p>
+                    <p>More projects coming soon...</p>
                 </article>
             </div>
             <div id=phpRef class=content>
                 <div id="ref"></div>
                 <article>
-                <h2>PHP References</h2>
-                This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!!         This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!!         This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!!         This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!!         This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!!         This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!! 
+                    <h2>PHP References</h2>
+                    <h3>Important Keywords</h3>
+                    <h4>&emsp;echo</h4>
+                    <p>
+                        &emsp;&emsp;The echo keyword will output a string of text to the browser. 
+                    </p>
+                    <h4>&emsp;static</h4>
+                    <p>
+                        &emsp;&emsp;The static keyword has to do with declaring and setting properties of functions and variables. Static means that the variable or function is not linked to any object but rather to a class. Static entities are 'more free' or are easier to access. This is useful for dealing with or altering properties of the class itself rather than a specific element of the class.
+                    </p>
+                    <h4>&emsp;public</h4>
+                    <p>
+                        &emsp;&emsp;The public keyword in PHP has to do with visibility. Properties, methods and constants all have visibility, whether it be public, protected or private. Public is the mos accessible and lenient as public entitities can be accessed from anywhere as the other visibility values have access limitations.
+                    </p>
+                    <h4>&emsp;try</h4>
+                    <p>
+                        &emsp;&emsp;The try keyword in PHP has to do with exception handling. Exception handling has to do with attempting to execute certain statements, if they operate correctly no exception is thrown and the code executes as normal. If an exception is caught a special block after the try block is executed. The catch block is closely association with the try block and will create an exception object which can be given it's own statements to execute. This helps ensure predictability in the use of code and helps log errors.
+                    </p>
+                    <h4>&emsp;if</h4>
+                    <p>
+                        &emsp;&emsp;PHP like many other languages has an if statement. The if statement checks a condition and if it is true the code block within the if statement is executed.
+                    </p>
+                    <h4>&emsp;for</h4>
+                    <p>
+                        &emsp;&emsp;
+                    </p>
+                    <h4>&emsp;clone</h4>
+                    <p>
+                        &emsp;&emsp;
+                    </p>
                 </article>
             </div>
         </div>
