@@ -167,20 +167,85 @@
             <div id=nodeIntro class=content>
                 <article>
                 <h2>Node.js Introduction</h2>
-                This is the content for indexContentA! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. letsTestTheCssPropertyWordWrapItSeemsToBeWorkingYay!
+                    Node.js is a Java Script runtime environment. This allows JavaScript to run standalone applications without the help of a browser. This allows you to use Java Script on servers as a server side scripting language. This is a very common use for the Node.js environment. There are many pro's cons to Node.js relative to PHP. One pro is that Node.js allows both server side and client side applications to be written in Java Script. This is useful for teams as it enables them to communicate in the same scripting language and even share some libraries. The usability is the main advantage as Node.js is slower than PHP in most cases.
                 </article>
             </div>
             <div id=nodeProjects class=content>
                 <article>
-                     <h2>Node.js Projects</h2>
-                This is the content for indexContentB! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. Will this ever overflow, it shouldn't it has no max height! This is the content for indexContentB! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. Will this ever overflow, it shouldn't it has no max height! This is the content for indexContentB! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. Will this ever overflow, it shouldn't it has no max height! This is the content for indexContentB! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. Will this ever overflow, it shouldn't it has no max height!
+                    <h2>Node.js Projects</h2>
+                    <h3>Project #1 - Creating a Server and Hello World!</h3>
+                    <p>
+                        First thing is first, in order to run Node.js application you need to download it. Download it <a href = "https://nodejs.org/en/download/" target = "_blank">here.</a>
+                    </p>
+                    <p>Now we will create a Java Script file to run on Node.js. All node applications are written in files with the js extension. Create a new document entitled helloWorld.js. Then type the following...</p><br>
+                    <code>
+                        var http = require('http');
+                    </code>
+                    <p>This is the first line, and all it does is import a http module. Many useful functions exist within this module. Next, under the http module expression write this... </p><br>
+                    <code>
+                        http.createServer(function (request, response){});
+                    </code>
+                    <p>Here we are calling a function within the http module known as 'createServer'. This function takes a function as a parameter. The function passed to the createServer is an anonymous function and takes two parameters 'request' and 'response'. These parameters are objects whose values are filled in by the HTTP server. More on that later. Our function is not entirely written yet, this is just a step by step walkthrough. The code is not near complete. Next, between the curly braces of our anonymous function add the following... </p><br>
+                    <code>
+                        response.writeHead(200, {'Content-Type': 'text/plain'});<br>
+                        response.end('Hello World\n');<br>
+                    </code>
+                    <p>The first line calls another function which is associated with the response object. This function, 'writeHead' takes two arguments. The first argument is the status code, a status code of 200 signals everything is alright. The second argument is an object which helps establish the response headers. In this case we are setting our content type to text / html. </p>
+                    <p>
+                        The second line deals with a function of the response object known as end. End has three parametrs; data, encoding and callback. In this case, we are just using a string which will more or less simulate another function known as write, This will simply add the text to our page as the default encoding is UTF-8 and our callback is and does not need to be specified. Then the message will be complete and the code will end. Every response must call end.
+                    </p>
+                    <p>Next, we are going to apply the listen function of the createServer object. After the closing parentheses of the http.createServer function add this...</p><br>
+                    <code>
+                        .listen(8080);
+                    </code>
+                    <p>This creates a listener on port 8080. Whenever this port is accessed our code will run.</p>
+                    <p>
+                        Then, finally add a console.log statement like this at the very end.
+                    </p><br>
+                    <code>
+                        console.log('Server started');
+                    </code>
+                    <p>
+                        This will let you know the server is running after you start the application.
+                    </p>
+                    <p>Now, your file in it's entirety should look like this.</p><br>
+                    <code>
+                        var http = require('http');<br>
+                        <br>http.createServer(function(request, response) {
+                        <br>&emsp;response.writeHead(200, {'Content-Type' : 'text/plain'});<br>
+                        &emsp;response.end('Hello World\n');<br>
+                        }).listen(8080);<br><br>
+                        console.log('Server started');
+                    </code>
+                    <p>Now you can run your application by typing <code>node helloWorld.js</code> in the terminal. Now you know the basics, start experimenting!</p>
+                    <p>More projects coming soon...</p>
                 </article>
             </div>
             <div id=nodeRef class=content>
                 <div id="ref"></div>
                 <article>
                 <h2>Node.js References</h2>
-                This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!!         This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!!         This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!!         This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!!         This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!!         This is the content for indexContentC! It will be replaced soon. This sentence has a variety of different sized words mm hmm. A lot of very short and small words at most five chars. Extremely gigantic characterStrings exisisting. The footer goes below, make sure I'm not too close!! 
+                    <h3>Modules and their Content</h3>
+                    <h3>http module</h3>
+                    <h4>Methods</h4>
+                    <h5>&emsp;http.createServer()</h5>
+                    <p>&emsp;&emsp;This creates a new object of the http.Server class.</p>
+                    <h5>&emsp;http.request()</h5>
+                    <p>&emsp;&emsp;This method makes a HTTP request to a server. It creates an objets of the http.ClientRequest class.</p>
+                    <h5>&emsp;http.get()</h5>
+                    <p>&emsp;&emsp;This method is just like http.request() only it is more specific as it always ueses the HTTP method of GET and automatically calls req.end().</p>
+                    <h4>Classes</h4>
+                    <h5>&emsp;http.Agent</h5>
+                    <p>&emsp;&emsp;This class helps handle HTTP networking. It queues requests and manages sockets.</p>
+                    <h5>&emsp;http.ClientRequest</h5>
+                    <p>&emsp;&emsp;An object of this class is created when either http.request() or http.get() is called. It represents an in-progress request whose header has already been queued. </p>
+                    <h5>&emsp;http.Server</h5>
+                    <p>&emsp;&emsp;Objects of this class are commonly created when creating a server using http.createServer(). Once an object of this class is created you can access the methods of this class, such as listen().</p>
+                    <h5>&emsp;http.ServerResponse</h5>
+                    <p>&emsp;&emsp;This class establishes the properties and methods of a servers response such as the end() and writeHead() methods. It forms the response objects behavior.</p>
+                    <h5>&emsp;http.IncomingMessage</h5>
+                    <p>&emsp;&emsp;This class handles the behavior and properties of objects that interact with request objects from servers and response events from http.ClientRequest objects. It is also allows access to useful properties of reponses such as the status code, headers and URL.</p>
+                    <p>**More references coming soon!</p>
                 </article>
             </div>
         </div>
